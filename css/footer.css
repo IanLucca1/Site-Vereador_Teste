@@ -1,0 +1,55 @@
+/* --- Footer --- */
+#footer {
+  background-color: #192a56;
+  color: #fff;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  flex: 1 1 300px; /* ocupa espaço à esquerda */
+  
+}
+
+.footer-left a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-center {
+  flex: 0 1 100%;
+  text-align: center;
+  order: 3; /* garante que a copyright fique central em mobile */
+  border-top: 2px solid #ccc ;
+  margin-top: 2px;
+}
+.footer-center p {
+  margin: 0;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.footer-right {
+  flex: 0 0 auto; /* mantém a largura da figura */
+  text-align: right;
+  text-align: center;
+}
+
+.footer-right img {
+  width: 10rem;
+  height: 10rem;
+
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+.footer-links li::marker {
+   content: "| ";
+  color: #fff;
+  font-size: 25px;
+}

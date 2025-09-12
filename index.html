@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="img/img_Jose.jpg" type="image/png" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <title>Home - José Ferreira</title>
+</head>
+
+  <body>
+    <header id="Header-Principal">
+      <div id="redes-socias">
+        <ul id="redes_socias">
+          <li>
+            <a
+              href="https://www.instagram.com/joseferreira.projetoajudai/"
+              target="_blank"
+            >
+              <img src="img/instagram.png" alt="insta" class="img" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/jose.ferreira.ajudai/"
+              target="_blank"
+            >
+              <img src="img/facebook.png" alt="facebook" class="img" />
+            </a>
+          </li>
+          <li>
+            <a href="https://x.com/joseferreirarug" target="_blank">
+              <img src="img/twitter.png" alt="twitter" class="img"
+            /></a>
+          </li>
+          <li>
+            <a href="https://wa.me/991418282"
+              ><img src="img/whatsapp.png" alt="whatsapp" class="img"
+            /></a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <a href="mailto:JoseFerreira@gmail.com" id="Email_link">
+          <span>Email</span>
+          <br />
+          <span>ver.joseferreira@cmbh.mg.gov.br</span>
+        </a>
+      </div>
+    </header>
+    <main>
+      <div>
+        <div id="links-principais">
+          <img src="img/logan_JoseFerreira.jpg" alt="" id="logan" />
+
+          <a href="index.html">Home</a>
+          <a href="pages/JoseFerreira.html">Quem Sou</a>
+          <a href="pages/CamaraBH.html">Câmara de BH</a>
+          <a href="pages/Projetos.html">Principais Projetos</a>
+          <a href="pages/EmendasParlamentares.html">Emendas</a>
+        </div>
+      </div>
+      <div class="carousel">
+        <div class="slide active">
+          <div class="slide-content centered">
+            <h2>Acompanhe as ultimas noticias do mandato!</h2>
+            <p>
+              Fique por dentro das ações, projetos e iniciativas do vereador
+              José Ferreira na Câmara Municipal de Belo Horizonte.
+              <br />
+              Acompanhe nossas redes sociais para mais informações.
+            </p>
+            <a
+              href="https://www.cmbh.mg.gov.br/t%C3%B3picos/jos%C3%A9-ferreira"
+              target="_blank"
+            >
+              <button type="button" value="Noticias" id="button-carrosel">
+                Noticias
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <div class="slide">
+          <!-- aqui imagem à esquerda e texto à direita -->
+          <div class="slide-content split">
+            <div class="slide-image">
+              <img
+                src="img/teste.jpg"
+                alt="Projetos e leis"
+                id="leis_img"
+                alt="Foto do vereador José Ferreira falando ao microfone"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="slide-text">
+              <h2>
+                Descubra os principais projetos e leis que transformam nossa
+                cidade.
+              </h2>
+              <p>Confira os principais projetos e leis do município.</p>
+              <br />
+              <a
+                href="https://www.cmbh.mg.gov.br/vereadores/jos%C3%A9-ferreira/legislacao"
+                target="_blank"
+              >
+                <button type="button" value="Leis" id="button-carrosel">
+                  Leis
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide active">
+          <div class="slide-content centered">
+            <h2>Venha acompanhar a onde as Emendas estão sendo Enviadas!</h2>
+            <div class="slide-image">
+              <img
+                src="img/Jose_Quemsou.jfif"
+                alt="Projetos e leis"
+                id="leis_img2"
+                alt="Foto do vereador José Ferreira falando ao microfone"
+                loading="lazy"
+              />
+            </div>
+            <p>
+              Fique por dentro pra saber onde as emendas parlamentares do
+              vereador José Ferreira estão sendo aplicadas.
+              <br />
+              Acompanhe nossa tabela de emendas para mais informações.
+            </p>
+            <a href="pages/EmendasParlamentares.html" target="_blank">
+              <button type="button" value="Noticias" id="button-carrosel">
+                Emendas
+              </button>
+            </a>
+          </div>
+        </div>
+
+        <button id="prev" aria-label="Slide anterior">←</button>
+        <button id="next" aria-label="Próximo slide">→</button>
+      </div>
+
+ <section class="novidades-section">
+    <h2>Novidades do Mandato</h2>
+
+    <div class="swiper swiper-novidade">
+      <div class="swiper-wrapper">
+        </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+</section>
+      <!---------Cards-------->
+
+      <div class="info-cards">
+        <div class="card dark">
+          <img src="img/clock.png" alt="Horário" class="icon" />
+          <div>
+            <strong>Entre em contato:</strong><br />
+            Whatsapp: (31) 97164-3097
+          </div>
+        </div>
+        <div class="card green">
+          <img src="img/home.png" alt="Endereço" class="icon" />
+          <div>
+            <strong>Câmara Municipal de Belo Horizonte</strong><br />
+            Avenida dos Andradas, 3100 - Gabinete 306B -<br />
+            Bairro Santa Efigênia - BH/MG - CEP: 30260-900
+          </div>
+        </div>
+        <div class="card dark">
+          <img src="img/calendar.png" alt="Aberto" class="icon" />
+          <div>
+            <strong>Estamos abertos</strong><br />
+            Segunda à sexta - 8h às 18h
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-------Footer-------->
+    <footer id="footer">
+      <div class="footer-left">
+        <h2>Navegue:</h2>
+        <br />
+        <ul class="footer-links">
+          <li><a href="../index.html" class="Links">Home</a></li>
+          <li>
+            <a href="../pages/JoseFerreira.html" id="QuemSou">Quem Sou</a>
+          </li>
+          <li>
+            <a href="../pages/CamaraBH.html" class="Links">Câmara de BH</a>
+          </li>
+          <li>
+            <a href="../pages/Projetos.html" class="Links"
+              >Principais Projetos</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-center">
+        <p>© 2025 José Ferreira - Todos os direitos reservados.</p>
+      </div>
+
+      <figure id="figure-img" class="footer-right">
+        <img
+          src="https://tse2.mm.bing.net/th/id/OIP.aRQEVigoI8YCU24fii8M1AHaHa?r=0&cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3"
+          alt="Compromisso com Você!"
+        />
+        <figcaption>Compromisso com <br />Você!</figcaption>
+      </figure>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="projetos/index.js"></script>
+    <script>
+      const slides = document.querySelectorAll(".slide");
+      const prevBtn = document.getElementById("prev");
+      const nextBtn = document.getElementById("next");
+      const carousel = document.querySelector(".carousel");
+
+      let currentIndex = 0;
+      const AUTO_INTERVAL = 5000;
+      let autoTimer = null;
+
+      function showSlide(index) {
+        if (!slides || slides.length === 0) return;
+        slides.forEach((slide, i) =>
+          slide.classList.toggle("active", i === index)
+        );
+        currentIndex = index;
+      }
+
+      function nextSlide() {
+        showSlide((currentIndex + 1) % slides.length);
+      }
+
+      function prevSlide() {
+        showSlide((currentIndex - 1 + slides.length) % slides.length);
+      }
+
+      function startAutoPlay() {
+        stopAutoPlay();
+        autoTimer = setInterval(nextSlide, AUTO_INTERVAL);
+      }
+
+      function stopAutoPlay() {
+        if (autoTimer) {
+          clearInterval(autoTimer);
+          autoTimer = null;
+        }
+      }
+
+      function resetAutoPlay() {
+        startAutoPlay();
+      }
+
+      // adiciona listeners com checagem
+      if (prevBtn)
+        prevBtn.addEventListener("click", () => {
+          prevSlide();
+          resetAutoPlay();
+        });
+      if (nextBtn)
+        nextBtn.addEventListener("click", () => {
+          nextSlide();
+          resetAutoPlay();
+        });
+
+      // pausar ao hover/focus
+      if (carousel) {
+        carousel.addEventListener("mouseenter", stopAutoPlay);
+        carousel.addEventListener("mouseleave", startAutoPlay);
+        carousel.addEventListener("focusin", stopAutoPlay);
+        carousel.addEventListener("focusout", startAutoPlay);
+      }
+
+      // teclas
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "ArrowLeft") {
+          prevSlide();
+          resetAutoPlay();
+        }
+        if (e.key === "ArrowRight") {
+          nextSlide();
+          resetAutoPlay();
+        }
+      });
+
+      // suporte touch (swipe)
+      (function addTouchSwipe() {
+        if (!carousel) return;
+        let startX = 0,
+          endX = 0;
+        carousel.addEventListener("touchstart", (e) => {
+          startX = e.changedTouches[0].screenX;
+          stopAutoPlay();
+        });
+        carousel.addEventListener("touchend", (e) => {
+          endX = e.changedTouches[0].screenX;
+          const diff = endX - startX;
+          if (Math.abs(diff) > 40) {
+            if (diff < 0) nextSlide();
+            else prevSlide();
+          }
+          startAutoPlay();
+        });
+      })();
+
+      // inicializa
+      showSlide(currentIndex);
+      startAutoPlay();
+    </script>
+  </body>
+</html>

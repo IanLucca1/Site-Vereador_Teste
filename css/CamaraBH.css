@@ -1,0 +1,260 @@
+
+.camara-hero {
+    position: relative;
+    height: 350px;
+    background-image: url('../img/plenario-cmbh.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+/* Links Principais*/
+#links-principais {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 20px;
+  gap: 2rem;
+}
+
+#logan {
+  height: 16rem;
+  width: 20rem;
+}
+
+#links-principais a {
+  text-decoration: none;
+  color: black;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#links-principais a:nth-of-type(3) {
+  color: #192a56;
+  font-weight: 900;
+}
+
+#links-principais a:not(:first-of-type):hover {
+  transform: scale(1.1);
+  color: #192a57;
+}
+/* Links Principais*/
+
+.camara-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #192a56
+}
+
+.hero-content {
+    position: relative; 
+    z-index: 2;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+  
+
+.camara-container {
+    display: flex;
+    gap: 30px; 
+    max-width: 1200px;
+    margin: 40px auto; 
+    padding: 0 20px;
+}
+
+.camara-sidebar {
+    flex: 1;
+    min-width: 250px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    height: fit-content; 
+}
+
+.camara-sidebar h3 {
+    margin-top: 0;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.camara-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.camara-sidebar ul li a {
+    display: block;
+    padding: 12px 15px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.camara-sidebar ul li a:hover {
+    background-color: #e0e0e0;
+    color: #000;
+}
+
+
+.camara-main-content {
+    flex: 3;
+}
+
+.camara-main-content h2 {
+    margin-top: 0;
+}
+
+.novidade-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.novidade-card small {
+    color: #666;
+    font-size: 0.9em;
+}
+.novidade-card h3 {
+    margin: 10px 0;
+}
+.novidade-card p {
+    line-height: 1.6;
+    color: #333;
+}
+.links-noticias {
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+}
+.links-noticias:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .camara-container {
+        flex-direction: column; 
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+}
+
+
+
+/* ======================================================= */
+/* --- CSS PARA RESPONSIVIDADE (TELAS MENORES) --- */
+/* Regras aplicadas quando a tela tem 768px de largura ou menos */
+/* ======================================================= */
+
+@media (max-width: 768px) {
+  /* --- Ajustes no Header Superior --- */
+  #Header-Principal {
+    height: auto; /* Altura automática para caber o conteúdo */
+    flex-direction: column; /* Empilha os itens */
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  /* --- Ajustes na Navegação Principal --- */
+  #links-principais {
+    flex-direction: column; /* Empilha o logo e os links */
+    padding-right: 0;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  #logan {
+    height: 10rem; /* Diminui o tamanho do logo */
+    width: auto;
+  }
+
+  #links-principais a {
+    font-size: 1.1rem; /* Aumenta um pouco a fonte dos links para toque */
+    padding: 0.5rem 0;
+  }
+
+  /* --- Ajustes no Banner "Quem Sou" --- */
+  .banner-quem-sou {
+    height: 25rem; /* Diminui a altura do banner */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 0;
+  }
+
+  .banner-quem-sou h1 {
+    font-size: 2rem; /* Diminui a fonte do título */
+    padding-right: 0; /* REMOVE o padding que quebrava o layout */
+  }
+
+  /* --- Ajustes no Layout de Duas Colunas --- */
+  .duas-colunas {
+    flex-direction: column; /* A mágica acontece aqui: empilha as colunas */
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+
+  .coluna-texto {
+    font-size: 1.1rem; /* Ajusta o tamanho do texto para melhor leitura */
+    text-align: justify;
+  }
+
+  /* --- Ajustes Gerais de Espaçamento --- */
+  .centralizado {
+    padding: 0 1rem; /* Menos espaçamento lateral */
+  }
+
+  /* --- Ajustes no Rodapé (Footer) --- */
+  #footer {
+    flex-direction: column; /* Empilha os itens do rodapé */
+    text-align: center; /* Centraliza tudo */
+    gap: 2rem;
+  }
+
+  .footer-left,
+  .footer-right {
+    text-align: center; /* Garante o alinhamento central */
+    flex-basis: 100%; /* Faz ocupar a largura toda */
+  }
+  
+  .footer-center {
+    order: 3; /* Mantém o copyright por último */
+  }
+
+  .footer-links {
+    padding-left: 0; /* Remove o espaçamento da lista */
+    list-style: none; /* Remove os marcadores/bolinhas */
+  }
+
+  .footer-links li::marker {
+    content: ""; /* Esconde o | no mobile */
+  }
+
+  .footer-links li {
+    margin-bottom: 0.5rem; /* Espaçamento entre os links */
+  }
+  
+  .footer-right img {
+    margin: 0 auto; /* Centraliza a imagem */
+  }
+}

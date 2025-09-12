@@ -1,0 +1,391 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+#teste {
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+}
+
+#logan {
+  height: 16rem;
+  width: 20rem;
+}
+/* Links Principais*/
+#links-principais {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 20px;
+  gap: 2rem;
+}
+
+#links-principais a {
+  text-decoration: none;
+  color: black;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#links-principais a:first-of-type {
+  color: #192a56;
+  font-weight: 900;
+}
+
+#links-principais a:not(:first-of-type):hover {
+  transform: scale(1.1);
+  color: #192a57;
+}
+/* Links Principais*/
+/* Carrossel - base */
+.carousel {
+  position: relative;
+  margin: auto;
+  color: white;
+  overflow: hidden;
+  height: 30rem;
+  max-width: 100%;
+}
+
+/* slide base */
+.slide {
+  display: none;
+  height: 100%;
+  width: 100%;
+  background-color: #192a56;
+  position: relative;
+}
+
+.slide.active {
+  display: block;
+}
+
+/* conteúdo dos slides: variações centered e split */
+.slide-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1100px;
+  width: calc(100% - 80px);
+  display: flex;
+  gap: 2.5rem;
+  font-size: 18px;
+  align-items: center;
+}
+
+/* slide 1: centralizado e vertical */
+.slide-content.centered {
+  flex-direction: column;
+  text-align: center;
+}
+
+/* slide 2: imagem à esquerda, texto à direita */
+.slide-content.split {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+/* área da imagem */
+.slide-image {
+  flex: 0 0 auto; /* tamanho fixo / não encolhe muito */
+}
+
+/* imagem: controlada com object-fit para não distorcer */
+.slide-image img,
+#leis_img {
+  display: block;
+  width: 320px;        /* ajuste se quiser maior/menor */
+  height: 320px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+#leis_img2 {
+    display: block;
+    width: 310px;
+    height: 185px;
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* área do texto ao lado da imagem */
+.slide-text {
+  flex: 1 1 auto;
+}
+
+/* títulos e parágrafos */
+.slide-content h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+  line-height: 1.1;
+}
+
+.slide-content p {
+  font-size: 1rem;
+  color: #e6eefc;
+  line-height: 1.5;
+  margin-top: 0.5rem;
+}
+
+/* botão */
+#button-carrosel {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform .15s ease, background-color .2s ease;
+}
+#button-carrosel:hover { transform: translateY(-2px); }
+
+/* Setas do carrossel (mantive as suas posições) */
+#prev,
+#next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #2a4481;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+#prev { left: 16px; }
+#next { right: 16px; }
+
+/* Posiciona as setas */
+
+.novidades {
+  margin: 40px 0;
+  text-align: center;
+}
+
+/* Contato-Camara-Gabinete*/
+
+.info-cards {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 40px 0;
+}
+
+.icon {
+  height: 4rem;
+  width: 4rem;
+}
+.card {
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  border-radius: 4px;
+  min-width: 320px;
+  max-width: 400px;
+  color: #fff;
+}
+.card.dark {
+  background: #171738;
+}
+.card.green {
+  background: #00b1a9;
+}
+.card .icon {
+  /* width: 40px;
+  height: 40px; */
+  margin-right: 16px;
+}
+.card strong {
+  font-size: 1.1em;
+}
+
+.card.dark:hover {
+  background: #00b1a9;
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 0.9s ease;
+}
+
+.card.green:hover {
+  background: #171738;
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 0.9s ease;
+}
+
+/*Novidades*/
+
+.novidades-section {
+  padding: 40px;
+  text-align: center;
+}
+
+.novidades-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #1a2b4c;
+}
+
+.novidades-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.novidadess-section{
+   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.novidade-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  text-align: left;
+}
+
+.novidade-card:hover {
+  transform: translateY(-5px);
+}
+
+.novidade-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #0d6efd;
+}
+
+.novidade-card p {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.5;
+}
+
+.novidade-card small {
+  display: block;
+  margin-bottom: 10px;
+  color: #888;
+}
+
+.links-noticias {
+  text-decoration: none;
+  color: #0d6efd;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+/*Novidades*/
+
+
+
+@media (max-width: 992px) {
+  #links-principais {
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 1rem;
+  }
+
+  #logan {
+    height: 12rem;
+    width: 15rem;
+  }
+
+  .info-cards {
+    flex-wrap: wrap; /* Permite que os cards quebrem a linha */
+  }
+
+  .slide-content {
+    gap: 1.5rem;
+  }
+
+  .slide-content h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Para telas menores que 768px (tablets em modo retrato e abaixo) */
+@media (max-width: 768px) {
+  #Header-Principal {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+  
+  #footer {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .footer-links {
+    justify-content: center;
+  }
+
+  /* Ajusta o carrossel para layout de coluna */
+  .slide-content.split {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .slide-image img, #leis_img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+
+/* Para telas menores que 480px (celulares) */
+@media (max-width: 480px) {
+  #links-principais a {
+    font-size: 0.9rem;
+  }
+
+  .carousel {
+    height: auto; /* Altura automática para o conteúdo caber */
+    min-height: 28rem;
+  }
+  
+  .slide-content {
+    position: relative; /* Remove o posicionamento absoluto para evitar cortes */
+    transform: none;
+    top: auto;
+    left: auto;
+    width: 100%;
+    padding: 40px 20px;
+    box-sizing: border-box;
+  }
+
+  .slide-content h2 {
+    font-size: 1.5rem;
+  }
+  
+  .slide-content p {
+      font-size: 0.9rem;
+  }
+
+  .info-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card {
+    min-width: 90%;
+  }
+
+  .novidades-section {
+    padding: 20px;
+  }
+}
