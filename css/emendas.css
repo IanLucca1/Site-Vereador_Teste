@@ -87,7 +87,7 @@ body {
 .swiper-emendas {
   width: 100%;
   padding: 10px 0 40px 0; /* Espaço para a paginação abaixo */
-      height: 25rem;
+  height: 25rem;
 }
 
 /* Estilo de cada Card (sem alterações, já estava ótimo) */
@@ -140,13 +140,54 @@ body {
   background: #192a56; /* Cor da bolinha ativa */
 }
 
-.swiper-button-next,.swiper-button-prev{
-  top: var(--swiper-navigation-top-offset,35%)
+.swiper-button-next,
+.swiper-button-prev {
+  top: var(--swiper-navigation-top-offset, 35%);
 }
 
-@media (max-width: 768px)
-{
+@media (max-width: 768px) {
+  .hero-emendas {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+    min-height: 50vh;
+  }
+
   .imagem-container {
     display: none;
+  }
+
+  .texto-container h1 {
+    font-size: 2.2rem;
+  }
+
+  .texto-container h2 {
+    font-size: 1.2rem;
+  }
+
+  .texto-container p {
+    font-size: 1rem;
+  }
+  .secao-emendas {
+    padding: 40px 20px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 40%;
+
+    --swiper-navigation-size: 28px;
+  }
+}
+
+/* --- Responsividade para telas de 500px ou menos --- */
+
+@media (max-width: 500px) {
+  #Voltar {
+    margin-left: 0;
+  }
+
+  .swiper-emendas {
+    height: 28rem;
   }
 }
