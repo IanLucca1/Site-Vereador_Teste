@@ -179,7 +179,7 @@
 
   /* --- Ajustes na Navegação Principal --- */
   #links-principais {
-    flex-direction: column; /* Empilha o logo e os links */
+  
     padding-right: 0;
     gap: 1rem;
     margin-top: 1rem;

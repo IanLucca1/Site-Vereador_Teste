@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../css/header.css" />
     <link rel="stylesheet" href="../css/CamaraBH.css" />
     <link rel="stylesheet" href="../css/footer.css" />
+        <link rel="stylesheet" href="../css/QuemSou.css" />
+    <link rel="stylesheet" href="../css/menu.css" />
 
     <title>Câmara de BH - José Ferreira</title>
   </head>
@@ -44,20 +46,25 @@
       </div>
     </header>
 
-    <nav id="links-principais">
-      <img
-        src="../img/logan_JoseFerreira.jpg"
-        alt="Logo José Ferreira"
-        id="logan"
-      />
-       <a href="../index.html">Home</a>
-          <a href="../pages/JoseFerreira.html">Quem Sou</a>
-          <a href="../pages/CamaraBH.html">Câmara de BH</a>
-          <a href="../pages/Projetos.html">Principais Projetos</a>
-          <a href="../pages/EmendasParlamentares.html">Emendas</a>
-    </nav>
+   
 
     <main>
+
+       <div>
+        <div id="links-principais">
+          <img src="../img/logan_JoseFerreira.jpg" alt="" id="logan" />
+
+          <button id="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+          <nav id="menu-nav">
+            <a href="../index.html">Home</a>
+            <a href="JoseFerreira.html">Quem Sou</a>
+            <a href="CamaraBH.html">Câmara de BH</a>
+            <a href="Projetos.html">Principais Projetos</a>
+            <a href="EmendasParlamentares.html">Emendas</a>
+          </nav>
+        </div>
+      </div>
+
       <section class="camara-hero">
         <div class="hero-content">
           <h1>Atuação na Câmara Municipal</h1>
@@ -80,7 +87,7 @@
         </aside>
 
         <div class="camara-main-content">
-          <h2>Últimas Atividades na Câmara</h2>
+          <h2>Últimas Atividades do Vereador</h2>
 
           <div class="novidade-card">
             <small>Set 09, 2025</small>
@@ -147,5 +154,6 @@
         <figcaption>Compromisso com <br />Você!</figcaption>
       </figure>
     </footer>
+     <script src="../projetos/menu.js"></script>
   </body>
 </html>

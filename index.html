@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="img/img_Jose.jpg" type="image/png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/img_Jose.jpg" type="image/png" />
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-  <link rel="stylesheet" href="css/index.css" />
-  <link rel="stylesheet" href="css/header.css" />
-  <link rel="stylesheet" href="css/footer.css" />
-  <title>Home - José Ferreira</title>
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/menu.css">
+    <title>Home - José Ferreira</title>
+  </head>
 
   <body>
     <header id="Header-Principal">
@@ -51,15 +55,19 @@
     <main>
       <div>
         <div id="links-principais">
-          <img src="img/logan_JoseFerreira.jpg" alt="" id="logan" />
+          <img src="img/LogoJoseFerreira.svg" alt="" id="logan" />
 
-          <a href="index.html">Home</a>
-          <a href="pages/JoseFerreira.html">Quem Sou</a>
-          <a href="pages/CamaraBH.html">Câmara de BH</a>
-          <a href="pages/Projetos.html">Principais Projetos</a>
-          <a href="pages/EmendasParlamentares.html">Emendas</a>
+          <button id="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+          <nav id="menu-nav">
+            <a href="index.html">Home</a>
+            <a href="pages/JoseFerreira.html">Quem Sou</a>
+            <a href="pages/CamaraBH.html">Câmara de BH</a>
+            <a href="pages/Projetos.html">Principais Projetos</a>
+            <a href="pages/EmendasParlamentares.html">Emendas</a>
+          </nav>
         </div>
       </div>
+
       <div class="carousel">
         <div class="slide active">
           <div class="slide-content centered">
@@ -82,7 +90,7 @@
         </div>
 
         <div class="slide">
-          <!-- aqui imagem à esquerda e texto à direita -->
+
           <div class="slide-content split">
             <div class="slide-image">
               <img
@@ -143,17 +151,16 @@
         <button id="next" aria-label="Próximo slide">→</button>
       </div>
 
- <section class="novidades-section">
-    <h2>Novidades do Mandato</h2>
+      <section class="novidades-section">
+        <h2>Novidades do Mandato</h2>
 
-    <div class="swiper swiper-novidade">
-      <div class="swiper-wrapper">
+        <div class="swiper swiper-novidade">
+          <div class="swiper-wrapper"></div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
-      <div class="swiper-pagination"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-    </div>
-</section>
+      </section>
       <!---------Cards-------->
 
       <div class="info-cards">
@@ -215,106 +222,10 @@
         <figcaption>Compromisso com <br />Você!</figcaption>
       </figure>
     </footer>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!---Footer---------->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-<script src="projetos/index.js"></script>
-    <script>
-      const slides = document.querySelectorAll(".slide");
-      const prevBtn = document.getElementById("prev");
-      const nextBtn = document.getElementById("next");
-      const carousel = document.querySelector(".carousel");
-
-      let currentIndex = 0;
-      const AUTO_INTERVAL = 5000;
-      let autoTimer = null;
-
-      function showSlide(index) {
-        if (!slides || slides.length === 0) return;
-        slides.forEach((slide, i) =>
-          slide.classList.toggle("active", i === index)
-        );
-        currentIndex = index;
-      }
-
-      function nextSlide() {
-        showSlide((currentIndex + 1) % slides.length);
-      }
-
-      function prevSlide() {
-        showSlide((currentIndex - 1 + slides.length) % slides.length);
-      }
-
-      function startAutoPlay() {
-        stopAutoPlay();
-        autoTimer = setInterval(nextSlide, AUTO_INTERVAL);
-      }
-
-      function stopAutoPlay() {
-        if (autoTimer) {
-          clearInterval(autoTimer);
-          autoTimer = null;
-        }
-      }
-
-      function resetAutoPlay() {
-        startAutoPlay();
-      }
-
-      // adiciona listeners com checagem
-      if (prevBtn)
-        prevBtn.addEventListener("click", () => {
-          prevSlide();
-          resetAutoPlay();
-        });
-      if (nextBtn)
-        nextBtn.addEventListener("click", () => {
-          nextSlide();
-          resetAutoPlay();
-        });
-
-      // pausar ao hover/focus
-      if (carousel) {
-        carousel.addEventListener("mouseenter", stopAutoPlay);
-        carousel.addEventListener("mouseleave", startAutoPlay);
-        carousel.addEventListener("focusin", stopAutoPlay);
-        carousel.addEventListener("focusout", startAutoPlay);
-      }
-
-      // teclas
-      document.addEventListener("keydown", (e) => {
-        if (e.key === "ArrowLeft") {
-          prevSlide();
-          resetAutoPlay();
-        }
-        if (e.key === "ArrowRight") {
-          nextSlide();
-          resetAutoPlay();
-        }
-      });
-
-      // suporte touch (swipe)
-      (function addTouchSwipe() {
-        if (!carousel) return;
-        let startX = 0,
-          endX = 0;
-        carousel.addEventListener("touchstart", (e) => {
-          startX = e.changedTouches[0].screenX;
-          stopAutoPlay();
-        });
-        carousel.addEventListener("touchend", (e) => {
-          endX = e.changedTouches[0].screenX;
-          const diff = endX - startX;
-          if (Math.abs(diff) > 40) {
-            if (diff < 0) nextSlide();
-            else prevSlide();
-          }
-          startAutoPlay();
-        });
-      })();
-
-      // inicializa
-      showSlide(currentIndex);
-      startAutoPlay();
-    </script>
+    <script src="projetos/index.js"></script>
+    <script src="projetos/menu.js"></script>
   </body>
 </html>

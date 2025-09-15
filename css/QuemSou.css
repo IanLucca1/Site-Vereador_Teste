@@ -5,36 +5,6 @@
   font-family: "Open Sans", sans-serif;
 }
 
-/* --- Links Principais --- */
-#links-principais {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-right: 20px;
-  gap: 2rem;
-}
-
-#links-principais a {
-  text-decoration: none;
-  color: black;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-#links-principais a:hover {
-  color: #192a56;
-  transform: scale(1.1);
-}
-
-#links-principais a:nth-of-type(2) {
-  color: #192a56;
-  font-weight: bold;
-}
-
-#logan {
-  height: 16rem;
-  width: 20rem;
-}
-
 /* --- Banner Quem Sou --- */
 .banner-quem-sou {
   width: 100%;
@@ -144,43 +114,16 @@
   padding: 0 2rem;
 }
 
-
-
-
-
-
-
-
-/* ======================================================= */
-/* --- CSS PARA RESPONSIVIDADE (TELAS MENORES) --- */
-/* Regras aplicadas quando a tela tem 768px de largura ou menos */
-/* ======================================================= */
-
 @media (max-width: 768px) {
+  #Email_link {
+    display: none;
+  }
   /* --- Ajustes no Header Superior --- */
   #Header-Principal {
     height: auto; /* Altura automática para caber o conteúdo */
     flex-direction: column; /* Empilha os itens */
     gap: 1rem;
     padding: 1rem;
-  }
-
-  /* --- Ajustes na Navegação Principal --- */
-  #links-principais {
-    flex-direction: column; /* Empilha o logo e os links */
-    padding-right: 0;
-    gap: 1rem;
-    margin-top: 1rem;
-  }
-
-  #logan {
-    height: 10rem; /* Diminui o tamanho do logo */
-    width: auto;
-  }
-
-  #links-principais a {
-    font-size: 1.1rem; /* Aumenta um pouco a fonte dos links para toque */
-    padding: 0.5rem 0;
   }
 
   /* --- Ajustes no Banner "Quem Sou" --- */
@@ -224,7 +167,7 @@
     text-align: center; /* Garante o alinhamento central */
     flex-basis: 100%; /* Faz ocupar a largura toda */
   }
-  
+
   .footer-center {
     order: 3; /* Mantém o copyright por último */
   }
@@ -241,7 +184,7 @@
   .footer-links li {
     margin-bottom: 0.5rem; /* Espaçamento entre os links */
   }
-  
+
   .footer-right img {
     margin: 0 auto; /* Centraliza a imagem */
   }

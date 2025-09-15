@@ -74,3 +74,103 @@ const novidadesSwiper = new Swiper(".swiper-novidade", {
     prevEl: ".swiper-novidade .swiper-button-prev",
   },
 });
+
+
+
+
+  const slides = document.querySelectorAll(".slide");
+      const prevBtn = document.getElementById("prev");
+      const nextBtn = document.getElementById("next");
+      const carousel = document.querySelector(".carousel");
+
+      let currentIndex = 0;
+      const AUTO_INTERVAL = 5000;
+      let autoTimer = null;
+
+      function showSlide(index) {
+        if (!slides || slides.length === 0) return;
+        slides.forEach((slide, i) =>
+          slide.classList.toggle("active", i === index)
+        );
+        currentIndex = index;
+      }
+
+      function nextSlide() {
+        showSlide((currentIndex + 1) % slides.length);
+      }
+
+      function prevSlide() {
+        showSlide((currentIndex - 1 + slides.length) % slides.length);
+      }
+
+      function startAutoPlay() {
+        stopAutoPlay();
+        autoTimer = setInterval(nextSlide, AUTO_INTERVAL);
+      }
+
+      function stopAutoPlay() {
+        if (autoTimer) {
+          clearInterval(autoTimer);
+          autoTimer = null;
+        }
+      }
+
+      function resetAutoPlay() {
+        startAutoPlay();
+      }
+
+      // adiciona listeners com checagem
+      if (prevBtn)
+        prevBtn.addEventListener("click", () => {
+          prevSlide();
+          resetAutoPlay();
+        });
+      if (nextBtn)
+        nextBtn.addEventListener("click", () => {
+          nextSlide();
+          resetAutoPlay();
+        });
+
+      // pausar ao hover/focus
+      if (carousel) {
+        carousel.addEventListener("mouseenter", stopAutoPlay);
+        carousel.addEventListener("mouseleave", startAutoPlay);
+        carousel.addEventListener("focusin", stopAutoPlay);
+        carousel.addEventListener("focusout", startAutoPlay);
+      }
+
+      // teclas
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "ArrowLeft") {
+          prevSlide();
+          resetAutoPlay();
+        }
+        if (e.key === "ArrowRight") {
+          nextSlide();
+          resetAutoPlay();
+        }
+      });
+
+      // suporte touch (swipe)
+      (function addTouchSwipe() {
+        if (!carousel) return;
+        let startX = 0,
+          endX = 0;
+        carousel.addEventListener("touchstart", (e) => {
+          startX = e.changedTouches[0].screenX;
+          stopAutoPlay();
+        });
+        carousel.addEventListener("touchend", (e) => {
+          endX = e.changedTouches[0].screenX;
+          const diff = endX - startX;
+          if (Math.abs(diff) > 40) {
+            if (diff < 0) nextSlide();
+            else prevSlide();
+          }
+          startAutoPlay();
+        });
+      })();
+
+      // inicializa
+      showSlide(currentIndex);
+      startAutoPlay();
