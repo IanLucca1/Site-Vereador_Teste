@@ -10,6 +10,13 @@
   gap: 1rem;
 }
 
+
+#links-principais a:nth-of-type(1) {
+  color: #192a56;
+  font-weight: 900;
+}
+
+
 /* Carrossel - base */
 .carousel {
   position: relative;

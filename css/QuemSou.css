@@ -74,6 +74,12 @@
   font-weight: bold;
 }
 
+
+#links-principais a:nth-of-type(2) {
+  color: #192a56;
+  font-weight: 900;
+}
+
 /* --- Seções de Conteúdo (História, Compromissos) --- */
 .secao-conteudo {
   /* Classe reutilizável */

@@ -1,8 +1,7 @@
 
 .camara-hero {
     position: relative;
-    height: 350px;
-    background-image: url('../img/plenario-cmbh.jpg'); 
+    height: 350px; 
     background-size: cover;
     background-position: center;
     display: flex;
@@ -22,7 +21,7 @@
 }
 
 #logan {
-  height: 16rem;
+  height: 16rem;  
   width: 20rem;
 }
 
