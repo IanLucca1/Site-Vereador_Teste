@@ -366,8 +366,16 @@
   .novidades-section {
     padding: 20px;
   }
+
+  #prev, #next {
+
+        top: 55%;
+       
+        padding: 7px;
+
 }
 
+}
 
 .swiper-button-prev,
 .swiper-button-next {

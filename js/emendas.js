@@ -1,45 +1,45 @@
 const EmendasParlamentares = [
   {
     imagem: "https://placehold.co/600x400/007bff/white?text=Saúde",
-    titulo: "Reforma do Posto de Saúde Vida Nova",
+    titulo: "Reforma do Posto de Saúde C.S Glória",
     descricao:
       "R$ 350.000,00 para a modernização da estrutura e compra de novos equipamentos, garantindo um atendimento mais digno para a comunidade.",
-    data: "15/07/2025",
+    data: "",
   },
   {
     imagem: "https://placehold.co/600x400/28a745/white?text=Educação",
-    titulo: "Kit de Robótica para Escolas Municipais",
+    titulo: "Destinado para atividades socioaassistencias pro CIAME PINDORAMA",
     descricao:
-      "R$ 120.000,00 investidos na aquisição de kits de robótica para 5 escolas, incentivando o aprendizado de tecnologia para os jovens.",
-    data: "22/05/2025",
+      "R$ 123.000,00 para a realização de atividades socioassistenciais, culturais e esportivas para crianças e adolescentes atendidos pelo CIAME PINDORAMA.",
+    data: "",
   },
   {
     imagem: "https://placehold.co/600x400/ffc107/white?text=Infraestrutura",
-    titulo: "Pavimentação da Rua das Flores",
+    titulo: "Contrução,ampliação e reforma de equipamentos no campo palmeirense",
     descricao:
-      "R$ 500.000,00 destinados ao asfaltamento e instalação de drenagem na Rua das Flores, um pedido antigo dos moradores do Bairro Esperança.",
-    data: "10/02/2025",
+      "R$ 150.000,00 destinados a contrução, ampliação e revitalização do vestiario do compo palmeirense.",
+    data: "04/11/2021",
   },
   {
-    imagem: "https://placehold.co/600x400/fd7e14/white?text=Esporte",
-    titulo: "Revitalização da Quadra do Bairro Industrial",
+    imagem: "https://placehold.co/600x400/007bff/white?text=Saúde",
+    titulo: "Destinado para reformas e compra de equipamentos para o posto de saude C.S Pindorama",
     descricao:
-      "R$ 95.000,00 para a reforma completa da quadra poliesportiva, incluindo nova pintura, alambrados e iluminação de LED para uso noturno.",
-    data: "30/11/2024",
+      "R$ 400.000,00 para a reforma completa da quadra poliesportiva, incluindo nova pintura, alambrados e iluminação de LED para uso noturno.",
+    data: "",
   },
   {
     imagem: "https://placehold.co/600x400/6f42c1/white?text=Cultura",
-    titulo: "Apoio ao Festival de Arte de Rua",
+    titulo: "Apoio ao lazer de ruas",
     descricao:
-      "R$ 50.000,00 de incentivo para a realização do festival anual de arte e cultura, apoiando artistas locais e promovendo o lazer na cidade.",
-    data: "05/09/2025",
+      "R$ 50.000,00 para a realização de eventos culturais e recreativos, promovendo a integração e o lazer na comunidade.",
+    data: "",
   },
   {
-    imagem: "https://placehold.co/600x400/dc3545/white?text=Ação+Social",
-    titulo: "Campanha do Agasalho Comunitária",
+    imagem: "https://placehold.co/600x400/007bff/white?text=Saúde",
+    titulo: "Destinado para compra de insumos e equipamentos para o hosipital Sofia Feldman",
     descricao:
-      "R$ 30.000,00 para a compra de cobertores e agasalhos distribuídos para a população em situação de rua durante o período de inverno.",
-    data: "28/04/2025",
+      "R$ 158.000,00 para a aquisição de novos equipamentos médicos e insumos essenciais, melhorando a capacidade de atendimento do hospital.",
+    data: "",
   },
 ];
 

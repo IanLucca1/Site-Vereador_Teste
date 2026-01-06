@@ -1,0 +1,43 @@
+<div class="camara-main-content">
+          <h2>Últimas Atividades do Vereador</h2>
+
+          <div class="novidade-card">
+            <small>Set 09, 2025</small>
+            <h3>Defesa da Saúde na Comissão</h3>
+            <p>
+              Hoje, na Comissão de Saúde e Saneamento, defendemos a ampliação do
+              horário de funcionamento dos postos de saúde nos bairros mais
+              populosos. A proposta visa garantir acesso à saúde para quem
+              trabalha o dia todo.
+            </p>
+            <a href="#" class="links-noticias" target="_blank"
+              >Leia a ata da reunião</a
+            >
+          </div>
+
+          <div class="novidade-card">
+            <small>Set 08, 2025</small>
+            <h3>Protocolo do Projeto "Adote um Canteiro"</h3>
+            <p>
+              Protocolamos hoje o Projeto de Lei que incentiva cidadãos e
+              empresas a cuidarem dos canteiros e praças da cidade, em troca de
+              visibilidade. Uma cidade mais verde e bem cuidada é
+              responsabilidade de todos!
+            </p>
+            <a href="#" class="links-noticias" target="_blank"
+              >Conheça o projeto</a
+            >
+          </div>
+
+          <div class="novidade-card">
+            <small>Set 04, 2025</small>
+            <h3>Fiscalização de Obras na Regional Norte</h3>
+            <p>
+              Acompanhamos o andamento das obras de contenção de encostas na
+              Regional Norte, uma demanda antiga da comunidade. Cobramos da
+              prefeitura um cronograma claro para a finalização dos trabalhos
+              antes do período de chuvas.
+            </p>
+            <a href="#" class="links-noticias" target="_blank">Veja as fotos</a>
+          </div>
+        </div>

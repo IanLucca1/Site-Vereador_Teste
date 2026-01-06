@@ -183,10 +183,6 @@
     list-style: none; /* Remove os marcadores/bolinhas */
   }
 
-  .footer-links li::marker {
-    content: ""; /* Esconde o | no mobile */
-  }
-
   .footer-links li {
     margin-bottom: 0.5rem; /* Espaçamento entre os links */
   }
