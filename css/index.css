@@ -10,12 +10,10 @@
   gap: 1rem;
 }
 
-
 #links-principais a:nth-of-type(1) {
   color: #192a56;
   font-weight: 900;
 }
-
 
 /* Carrossel - base */
 .carousel {
@@ -228,12 +226,6 @@
   gap: 20px;
 }
 
-.novidadess-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-}
-
 .novidade-card {
   background: #fff;
   border-radius: 12px;
@@ -241,6 +233,11 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease;
   text-align: left;
+
+  /* 🔥 ESSENCIAL */
+  height: 320px; /* ajuste se quiser */
+  display: flex;
+  flex-direction: column;
 }
 
 .novidade-card:hover {
@@ -257,8 +254,12 @@
   font-size: 15px;
   color: #444;
   line-height: 1.5;
-}
 
+  display: -webkit-box;
+  /* -webkit-line-clamp: 5; */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 .novidade-card small {
   display: block;
   margin-bottom: 10px;
@@ -271,24 +272,39 @@
   font-weight: bold;
   transition: color 0.3s ease;
 }
+
+.swiper-slide {
+  padding-bottom: 10px;
+}
+
+.swiper-pagination {
+  height: 2em;
+}
+
 /*Novidades*/
 
+@media (max-width: 1270px) {
+  .novidade-card {
+    min-height: 23rem; /* 🔥 garante espaço sem engessar */
+  }
+}
 
-@media (max-width: 1022px)
-{
-  .info-cards
-  {
+@media (max-width: 1022px) {
+  .info-cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
   }
-   .info-cards .card.green {
- 
-    grid-column: 1 / -1; 
+  .info-cards .card.green {
+    grid-column: 1 / -1;
     grid-row: 2;
   }
-}
 
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+}
 
 /* Para telas menores que 768px (tablets em modo retrato e abaixo) */
 @media (max-width: 768px) {
@@ -318,6 +334,10 @@
   #leis_img {
     width: 250px;
     height: 250px;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
   }
 }
 
@@ -351,10 +371,10 @@
   }
 
   .info-cards {
- grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 
-   .info-cards .card.green {
+  .info-cards .card.green {
     grid-column: auto;
     grid-row: auto;
   }
@@ -367,34 +387,24 @@
     padding: 20px;
   }
 
-  #prev, #next {
+  #prev,
+  #next {
+    top: 55%;
 
-        top: 55%;
-       
-        padding: 7px;
-
-}
-
+    padding: 7px;
+  }
 }
 
 .swiper-button-prev,
 .swiper-button-next {
-  width: 0px !important;
-  height: -1px !important;
-  font-size: 28.2rem !important;
-  /* background: #fff !important; */
-  color: #0d6efd !important;
-  /* border-radius: 50%; */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  border: none;
-  opacity: 0.95;
+  font-size: 1.5rem;
+  color: #0d6efd;
 }
-
 
 .swiper-button-next:after,
 .swiper-button-prev:after {
   font-family: swiper-icons;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-transform: none !important;
   letter-spacing: 0;
   font-variant: initial;

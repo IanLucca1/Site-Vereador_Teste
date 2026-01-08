@@ -162,3 +162,13 @@ width: 100%;
 .swiper-button-next {
   right: 10px;
 }
+
+
+
+@media (max-width: 768px) {
+
+  .imagem-container {
+    display: none;
+  }
+
+}

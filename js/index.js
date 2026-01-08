@@ -17,7 +17,7 @@ const Noticias = [
   },
   {
     data: "Nov 18, 2025",
-    titulo: "Visitas aos Centros de Saúde da Pampulha. 🏥💙",
+    titulo: "Visitas aos Centros de Saúde da Pampulha.🏥💙",
     text: "Durante minhas visitas aos centros de saúde da Região Pampulha, conversei com profissionais e usuários, observei a rotina das equipes e identifiquei necessidades de manutenção e modernização das unidades. Essas observações estão guiando novos encaminhamentos e reforçando meu compromisso em buscar melhorias reais para o SUS.",
     link: "https://www.instagram.com/p/DRNm1nvgUJq/",
     linkname: "@insta",

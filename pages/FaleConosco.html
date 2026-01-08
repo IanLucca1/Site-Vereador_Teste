@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../img/img_Jose.jpg" type="image/png" />
+    <link rel="stylesheet" href="../css/FaleConosco.css" />
+    <link rel="stylesheet" href="../css/emendas.css" />
+    <title>Fale Conosco</title>
+  </head>
+  <body>
+ <header>
+  <div class="top-nav">
+    
+    <a href="../index.html" class="btn" id="Voltar" onclick="voltarPagina(event)">Voltar</a>
+
+    <div class="header-actions">
+      <a href="https://wa.me/5531991418282" target="_blank" class="action-btn btn-whats" title="Falar no WhatsApp">
+         <img src="../img/whatsapp.png" alt="WhatsApp">
+      </a>
+      <a href="SEU_LINK_DO_GOOGLE_FORMS" target="_blank" class="action-btn btn-google" title="Formulário Completo">
+         <img src="https://cdn-icons-png.flaticon.com/512/2875/2875409.png" alt="Google Forms">
+      </a>
+    </div>
+
+  </div>
+
+  <section class="projetos-Jose">
+    <div class="texto-container">
+      <h1>Fale com o Gabinete</h1>
+      <p>
+        Aqui você pode enviar suas demandas por e-mail, dúvidas ou sugestões
+        pro Gabinete! Se tiver algo mais urgente, clique no ícone do <strong>WhatsApp</strong> 
+        acima. Para demandas complexas, use o <strong>Formulário do Google</strong>.
+      </p>
+    </div>
+    <div class="imagem-container">
+      <img src="https://ofator.com.br/wp-content/uploads/2025/01/vereador-jose-ferreira-podemos.jpg" alt="Imagem Vereador" />
+    </div>
+  </section>
+</header>
+
+    <main id="contato-main">
+      <div class="form-container">
+        <h2>Envie sua Mensagem (E-mail)</h2>
+        <p>
+          Preencha os campos abaixo para falar diretamente com nossa equipe.
+        </p>
+
+        <form
+          action="https://formsubmit.co/c0db43de6a1555767bcbdd1ee155348e"
+          method="POST"
+          enctype="multipart/form-data"
+        >
+          <input type="hidden" name="_subject" value="Novo Contato via Site" />
+          <input type="hidden" name="_captcha" value="false" />
+
+          <label for="titulo">Título / Assunto</label>
+          <input
+            type="text"
+            name="titulo"
+            id="titulo"
+            placeholder="Ex: Buraco na Rua X"
+            required
+          />
+
+          <label for="email">Seu Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="nome@email.com"
+            required
+          />
+
+          <label for="mensagem">Mensagem</label>
+          <textarea name="mensagem" id="mensagem" rows="5" required></textarea>
+
+          <label for="anexo">Anexar Foto (Opcional - Mais Ajuda na sua Demanda!)</label>
+          <input
+            type="file"
+            name="attachment"
+            id="anexo"
+            accept="image/png, image/jpeg, application/pdf"
+          />
+
+          <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+        </form>
+      </div>
+    </main>
+
+    <script>
+      function voltarPagina(event) {
+        if (window.history.length > 1) {
+          event.preventDefault();
+          window.history.back();
+        }
+      }
+    </script>
+  </body>
+</html>

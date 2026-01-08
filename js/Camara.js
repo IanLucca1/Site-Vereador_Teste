@@ -18,7 +18,7 @@ const NoticiasCamera = [
     data: "Dez 09, 2025",
     titulo: "Incentivo à telemedicina pode ser votado em 2º turno nesta quarta (10)",
     text: "O PL 296/2025, que institui o Programa Municipal de Telemedicina em Belo Horizonte, entrou na pauta do Plenário no dia 9 de dezembro. Entre os autores da proposta está o vereador José Ferreira, e o texto prevê consultas remotas gratuitas para usuários do SUS.",
-    link: "https://www.cmbh.mg.gov.br/comunicação/notícias/2025/12/incentivo-à-telemedicina...",
+    link: "https://www.cmbh.mg.gov.br/comunicação/notícias/2025/12/incentivo-à-telemedicina...",
     linkname: "Leia a ata da reunião",
   },
   {
@@ -37,8 +37,7 @@ const NoticiasCamera = [
   },
 ];
 
-
-// 🔵 Função para popular o carrossel da Câmara — IGUAL ao outro
+// Popular o carrossel
 function popularCarrosselCamera(seletorSwiper, dados) {
   const swiperWrapper = document.querySelector(
     `${seletorSwiper} .swiper-wrapper`
@@ -64,21 +63,28 @@ function popularCarrosselCamera(seletorSwiper, dados) {
   swiperWrapper.innerHTML = slidesHTML;
 }
 
-// Chama a função
 popularCarrosselCamera(".swiper-camera", NoticiasCamera);
 
-
-// Inicializa o Swiper para a Câmara vertical
+// Inicializa o Swiper
 const novidadesSwiper = new Swiper(".swiper-camera", {
   direction: "vertical",
-  slidesPerView: 3,
-  spaceBetween: 20,
   mousewheel: true,
   loop: true,
-
+  
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
-});
 
+  // Configuração padrão (Celular)
+  slidesPerView: 2,
+  spaceBetween: 10,
+
+  // Configuração para Tablet e PC
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    }
+  },
+});

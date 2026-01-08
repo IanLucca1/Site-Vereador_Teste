@@ -194,7 +194,7 @@
 /* Regras aplicadas quando a tela tem 768px de largura ou menos */
 /* ======================================================= */
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   /* --- Ajustes no Header Superior --- */
   #Header-Principal {
     height: auto; /* Altura automática para caber o conteúdo */
@@ -282,5 +282,10 @@
   
   .footer-right img {
     margin: 0 auto; /* Centraliza a imagem */
+  }
+
+
+  .swiper-pagination {
+    display: none !important;
   }
 }
