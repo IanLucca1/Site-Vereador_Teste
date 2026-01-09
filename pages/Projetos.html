@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-VVZPVGZQXN"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-VVZPVGZQXN");
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../img/img_Jose.jpg" type="image/png" />
@@ -11,6 +24,7 @@
     />
     <link rel="stylesheet" href="../css/Projetos.css" />
     <link rel="stylesheet" href="../css/emendas.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
   </head>
 
   <body>
@@ -58,8 +72,33 @@
       </section>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <div id="cookie-banner" class="cookie-banner">
+      <div class="cookie-text">
+        Este site utiliza cookies para garantir que você tenha a melhor
+        experiência e para fins estatísticos (Google Analytics). Ao continuar
+        navegando, você concorda com nossa
+        <a href="PoliticaEPrivacidade.html" target="_blank"
+          >Política de Privacidade</a
+        >.
+      </div>
+      <button id="accept-cookies" class="btn-cookie">Entendi e Aceito</button>
+    </div>
 
+    <script>
+      // Verifica se já aceitou
+      if (!localStorage.getItem("lgpd-aceito")) {
+        document.getElementById("cookie-banner").style.display = "flex";
+      }
+
+      // Função do botão
+      document
+        .getElementById("accept-cookies")
+        .addEventListener("click", function () {
+          localStorage.setItem("lgpd-aceito", "true"); // Salva no navegador
+          document.getElementById("cookie-banner").style.display = "none"; // Some
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script defer src="../js/projetos.js"></script>
   </body>
 </html>

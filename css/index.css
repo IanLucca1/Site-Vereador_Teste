@@ -367,7 +367,7 @@
   }
 
   .slide-content p {
-    font-size: 0.9rem;
+    /* font-size: 0.9rem; */
   }
 
   .info-cards {
@@ -389,7 +389,7 @@
 
   #prev,
   #next {
-    top: 55%;
+           top: 83%;
 
     padding: 7px;
   }
