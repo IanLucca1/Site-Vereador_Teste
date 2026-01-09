@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-VVZPVGZQXN"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-VVZPVGZQXN");
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Política de Privacidade</title>
     <link rel="stylesheet" href="../css/FaleConosco.css" />
     <link rel="stylesheet" href="../css/footer.css" />
     <style>
-      /* CSS extra só pra essa página ficar legível */
       .politica-container {
         max-width: 800px;
         margin: 40px auto;
@@ -99,5 +111,20 @@
         Gabinete Vereador José Ferreira - Câmara Municipal de BH
       </p>
     </div>
+
+    <script>
+      // Verifica se já aceitou
+      if (!localStorage.getItem("lgpd-aceito")) {
+        document.getElementById("cookie-banner").style.display = "flex";
+      }
+
+      // Função do botão
+      document
+        .getElementById("accept-cookies")
+        .addEventListener("click", function () {
+          localStorage.setItem("lgpd-aceito", "true"); // Salva no navegador
+          document.getElementById("cookie-banner").style.display = "none"; // Some
+        });
+    </script>
   </body>
 </html>

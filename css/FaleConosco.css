@@ -143,7 +143,7 @@ form textarea:focus {
   width: 45px;
   height: 45px;
   
-  /* AQUI ESTÁ O SEGREDO: 
+  /* : 
      50% = Bola
      12px = Quadrado arredondado (App) */
   border-radius: 12px; 
@@ -160,7 +160,7 @@ form textarea:focus {
   transform: scale(1.1);
 }
 
-/* --- CORREÇÃO IMPORTANTE AQUI --- */
+
 .action-btn img {
     width: 39px;
     height: 60px;
@@ -168,11 +168,11 @@ form textarea:focus {
 }
 
 .btn-whats {
-  background-color: #0ca629; /* Verde do Zap */
+  background-color: #0ca629; 
 }
 
 .btn-google {
-  /* Usei roxo para combinar com o Forms. Se preferir branco, coloque #ffffff */
+
   background-color: #7248B9; 
 }
 

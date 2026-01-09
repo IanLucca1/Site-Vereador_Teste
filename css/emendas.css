@@ -52,27 +52,25 @@ body {
   border-radius: 5px;
   margin-top: 20px;
   transition: background-color 0.3s;
-  border: none; /* Essencial para resetar o input */
-  cursor: pointer; /* Garante a "mãozinha" em todos */
-  font-family: inherit; /* Garante que a fonte seja a mesma do resto da página */
+  border: none; 
+  cursor: pointer; 
+  font-family: inherit;
 }
 
-/* Efeito hover para TODOS os botões com a classe .btn */
+
 .btn:hover {
   background-color: #f5f5f5;
   color: black;
 }
 
-/* Estilo específico APENAS para o botão Voltar */
+
 #Voltar {
   margin-left: 10px;
 }
 
-/* --- ALTERAÇÕES AQUI --- */
 
-/* Estilo da Seção da Lista de Emendas */
 .secao-emendas {
-  /* Renomeado de .grid-emendas */
+
   padding: 60px 80px;
 }
 
@@ -90,16 +88,16 @@ body {
   height: 25rem;
 }
 
-/* Estilo de cada Card (sem alterações, já estava ótimo) */
+/* Estilo de cada Card */
 .emenda-card {
   background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s;
-  display: flex; /* Adicionado para garantir que o conteúdo se estique */
-  flex-direction: column; /* Adicionado para garantir o layout vertical */
-  height: 100%; /* Garante que todos os cards no slide tenham a mesma altura */
+  display: flex; 
+  flex-direction: column; 
+  height: 100%; 
 }
 
 .emenda-card:hover {
