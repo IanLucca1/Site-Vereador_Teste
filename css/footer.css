@@ -102,6 +102,21 @@
     transform: scale(1.05);
 }
 
+
+#Pdp {
+  text-decoration: none;
+  color: #e6eefc;
+  display: inline-block; /* MUITO IMPORTANTE */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#Pdp:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+
+
 /* Responsivo para celular */
 @media (max-width: 768px) {
     .cookie-banner {

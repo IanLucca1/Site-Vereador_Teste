@@ -281,6 +281,24 @@
   height: 2em;
 }
 
+
+
+.card-link {
+  display: block;
+  text-decoration: none;
+}
+
+.card-link .card {
+  height: 100%;
+}
+
+.card-link .card:hover {
+  transform: scale(1.10);
+  transition: 1s ease;
+  cursor: pointer;
+}
+
+
 /*Novidades*/
 
 @media (max-width: 1270px) {
@@ -409,5 +427,5 @@
   letter-spacing: 0;
   font-variant: initial;
   line-height: 1;
-  padding-right: 3px;
+      padding-right: 26px;
 }

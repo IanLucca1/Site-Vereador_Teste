@@ -28,8 +28,14 @@ const Noticias = [
     text: "Onde antes não havia nada, agora nasce um novo espaço para a cidade.\n\n Um projeto que transforma uma área degradada em oportunidade, sustentabilidade e qualidade de vida para Belo Horizonte. ",
     link: "https://www.instagram.com/p/DSlH5SQDhMF/",
     linkname: "@insta",
-  }
-  
+  },
+  {
+  data: "Jan 11, 2026",
+  titulo: "Trabalho que não para, nem durante o recesso. 🧹🏙️",
+  text: "Mesmo durante o período de férias, seguimos acompanhando de perto as demandas da população. O gabinete parlamentar continua em funcionamento, recebendo pedidos da comunidade e encaminhando à Prefeitura de Belo Horizonte, sempre com o compromisso de trabalhar por uma cidade melhor.",
+  link: "https://www.instagram.com/joseferreira.projetoajudai/reel/DTWDoPYgrBY/",
+  linkname: "@insta",
+}
  
 ];
 
