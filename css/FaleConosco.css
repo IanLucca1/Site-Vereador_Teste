@@ -189,3 +189,10 @@ form textarea:focus {
     height: 22px;
   }
 }
+
+@media   (max-width: 415px)
+{
+  .projetos-Jose {
+    padding-left: 1rem;
+}
+}
