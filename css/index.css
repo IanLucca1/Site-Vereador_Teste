@@ -241,8 +241,10 @@
 }
 
 .novidade-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px); /* Agora ele tem 20px de "teto" para subir */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
+
 
 .novidade-card h3 {
   font-size: 20px;
@@ -274,14 +276,21 @@
 }
 
 .swiper-slide {
+  padding-top: 10px;    
   padding-bottom: 10px;
+  padding: 10px 5px;
 }
 
 .swiper-pagination {
-  height: 2em;
+  height: 3em;
 }
 
-
+.swiper-novidade {
+  overflow: hidden !important; /* Garante que só apareçam os cards certos */
+  padding-top: 20px;           /* 👈 Cria o espaço "invisível" para o card subir */
+  padding-bottom: 20px;        /* Espaço para a sombra não ser cortada em baixo */
+  margin-top: -20px;           /* 👈 Ajuste para não empurrar o título para baixo */
+}
 
 .card-link {
   display: block;
