@@ -18,7 +18,7 @@ const Noticias = [
     data: "Dez 10, 2025",
     titulo: "Projeto Ajudai recebe o Grande Colar na Câmara Municipal. 🎖️",
     text: "O Projeto Ajudai foi homenageado com o Grande Colar na Câmara Municipal de Belo Horizonte, concedido ao vereador José Ferreira, em reconhecimento ao impacto social do projeto na vida de tantas famílias. Uma iniciativa guiada por propósito, compromisso e cuidado com o próximo.",
-    link: "https://www.instagram.com/joseferreira.projetoajudai/",
+    link: "https://www.instagram.com/p/DSEGwswEeRu/",
     linkname: "@insta",
   },
   {
@@ -40,21 +40,21 @@ const Noticias = [
     data: "Ago 25, 2025",
     titulo: "Visita Técnica no bairro Santo Antônio 📍🏥",
     text: "Atendendo à solicitação dos moradores, realizamos uma visita técnica (na Rua Deputado Álvaro Sales) para ouvir de perto as demandas da comunidade e buscar soluções para melhorar a qualidade de vida de todos. 💛✨ O diálogo aberto com a população é essencial para construir uma cidade mais justa e eficiente.",
-    link: "https://www.instagram.com/p/DNytTDMQT8A/",
+    link: "https://www.instagram.com/p/DNytTDMQt8A/",
     linkname: "@insta",
   },
   {
     data: "Jul 20, 2025",
     titulo: "Visita técnica onde o povo precisa! 💙🏥",
     text: "Passei pelos Centros de Saúde dos bairros Vale do Jatobá, Petrópolis e Independência, acompanhando de perto a realidade de cada unidade. Ouvir a população e fiscalizar as condições de atendimento é meu dever como presidente da Comissão de Saúde da Câmara de BH. Saúde pública se faz com presença, escuta e ação.",
-    link: "https://www.instagram.com/p/DLlw1Kmx8Cr/",
+    link: "https://www.instagram.com/p/DL3OAfax_Qt/",
     linkname: "@insta",
   },
   {
     data: "Jul 11, 2025",
     titulo: "Revitalização da Rua Rio Petrópolis em andamento! 🏗️🚧",
     text: "Estamos trabalhando para transformar a mobilidade, segurança e qualidade de vida da comunidade. Acompanhe o progresso, compartilhe essa conquista e continue nos ajudando a construir uma cidade melhor para todos!",
-    link: "https://www.instagram.com/p/DL-1fPlxpzT/",
+    link: "https://www.instagram.com/p/DL-1fPIxpzT/",
     linkname: "@insta",
   },
   {
@@ -66,7 +66,7 @@ const Noticias = [
   },
   {
     data: "Jun 06, 2025",
-    titulo: "Visita Técnica da Saúde nos bairros Cinquentenário e Betânia 💙🏥",
+    titulo: "Visita Técnica da Saúde nos bairros Cinquentenário e Betânia 🩵🏥",
     text: "Realizei visitas técnicas na área da saúde nos bairros Cinquentenário, Betânia e Conjunto Betânia. Como presidente da Comissão de Saúde da Câmara Municipal de BH, acompanho de perto as condições das unidades para garantir uma saúde pública mais digna e eficiente para a população. Seguimos juntos!",
     link: "https://www.instagram.com/p/DKkts7JxF3U/",
     linkname: "@insta",
@@ -74,7 +74,7 @@ const Noticias = [
   {
     data: "Mai 21, 2025",
     titulo:
-      "Visita técnica aos centros de saúde nos bairros Vera Cruz, Alto Vera Cruz e Granja de Freitas 💙🏥",
+      "Visita técnica aos centros de saúde nos bairros Vera Cruz, Alto Vera Cruz e Granja de Freitas ❤️🏥",
     text: "Passamos pelos bairros Vera Cruz, Alto Vera Cruz e Granja de Freitas para conferir de perto a situação dos centros de saúde. Ouvir quem está na ponta, ver o que precisa mudar e cobrar soluções é parte do meu trabalho e eu faço questão de estar presente. BH só melhora quando a gente encara os problemas de frente.",
     link: "https://www.instagram.com/p/DJ63u9pAS8t/",
     linkname: "@insta",

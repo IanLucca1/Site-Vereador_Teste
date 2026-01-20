@@ -5,7 +5,7 @@ const projetosAndamento = [
     descricao:
       'Projeto para nomear como "Parque Taiobeiras" a nova área verde urbana localizada no antigo Aterro Sanitário da BR-040, promovendo lazer e qualidade de vida.',
     imagem: "https://placehold.co/400x200/28a745/FFFFFF?text=Meio+Ambiente",
-    link: "https://www.cmbh.mg.gov.br/atividade-legislativa/pesquisar-proposicoes/projeto-de-lei/494/2025",
+    link: "https://www.cmbh.mg.gov.br/atividade-legislativa/pesquisar-proposicoes/projeto-de-lei/490/2025",
   },
   {
     data: "28/07/2025",
@@ -38,7 +38,7 @@ const projetosAndamento = [
     descricao:
       "Projeto para a criação de duas novas linhas de ônibus para atender aos bairros mais afastados.",
     imagem: "https://placehold.co/400x200/fd7e14/FFFFFF?text=Transporte",
-    link: "#",
+    link: "https://www.cmbh.mg.gov.br/atividade-legislativa/pesquisar-proposicoes/projeto-de-lei/494/2025",
   },
   // Adicione mais projetos aqui...
 ];
@@ -50,7 +50,7 @@ const projetosAprovados = [
     descricao:
       "Reconhece a Corrida de Rolimã como prática esportiva oficial na cidade de Belo Horizonte. Sancionada como Lei Nº 11.886/2025.",
     imagem: "https://placehold.co/400x200/e83e8c/FFFFFF?text=Esporte+e+Lazer",
-    link: "#",
+    link: "https://www.cmbh.mg.gov.br/atividade-legislativa/pesquisar-proposicoes/projeto-de-lei/76/2025",
   },
   {
     data: "18/01/2025",
@@ -58,7 +58,7 @@ const projetosAprovados = [
     descricao:
       'Altera a legislação municipal para instituir o "Dia dos Profissionais da Beleza" a ser comemorado em 18 de junho. Sancionada como Lei Nº 11.824/2025.',
     imagem: "https://placehold.co/400x200/6f42c1/FFFFFF?text=Cultura+e+Eventos",
-    link: "#",
+    link: "https://www.cmbh.mg.gov.br/atividade-legislativa/pesquisar-proposicoes/projeto-de-lei/1008/2024",
   },
   {
     data: "07/03/2024",
@@ -66,7 +66,7 @@ const projetosAprovados = [
     descricao:
       "Dá o nome de Rua Montaltino à antiga Rua Quatro Mil e Cinco, localizada no Bairro Pindorama. Sancionada como Lei Nº 11.662/2024.",
     imagem: "https://placehold.co/400x200/6c757d/FFFFFF?text=Urbanismo",
-    link: "#",
+    link: "https://www.cmbh.mg.gov.br/atividade-legislativa/pesquisar-proposicoes/projeto-de-lei/755/2023",
   },
 ];
 

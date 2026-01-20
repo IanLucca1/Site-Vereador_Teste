@@ -245,7 +245,6 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-
 .novidade-card h3 {
   font-size: 20px;
   margin-bottom: 10px;
@@ -276,20 +275,20 @@
 }
 
 .swiper-slide {
-  padding-top: 10px;    
+  padding-top: 10px;
   padding-bottom: 10px;
   padding: 10px 5px;
 }
 
 .swiper-pagination {
-  height: 3em;
+  height: 3.5em;
 }
 
 .swiper-novidade {
-  overflow: hidden !important; /* Garante que só apareçam os cards certos */
-  padding-top: 20px;           /* 👈 Cria o espaço "invisível" para o card subir */
-  padding-bottom: 20px;        /* Espaço para a sombra não ser cortada em baixo */
-  margin-top: -20px;           /* 👈 Ajuste para não empurrar o título para baixo */
+  overflow: hidden !important;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: -20px;
 }
 
 .card-link {
@@ -302,17 +301,16 @@
 }
 
 .card-link .card:hover {
-  transform: scale(1.10);
+  transform: scale(1.1);
   transition: 1s ease;
   cursor: pointer;
 }
-
 
 /*Novidades*/
 
 @media (max-width: 1270px) {
   .novidade-card {
-    min-height: 23rem; /* 🔥 garante espaço sem engessar */
+    min-height: 23rem;
   }
 }
 
@@ -416,7 +414,7 @@
 
   #prev,
   #next {
-           top: 83%;
+    top: 83%;
 
     padding: 7px;
   }
@@ -436,5 +434,5 @@
   letter-spacing: 0;
   font-variant: initial;
   line-height: 1;
-      padding-right: 26px;
+  padding-right: 26px;
 }
