@@ -284,3 +284,19 @@
     display: none !important;
   }
 }
+
+
+/* celulares médios */
+@media (max-width: 410px) {
+  .novidade-card p {
+    font-size: 0.85rem;
+  }
+}
+
+/* celulares pequenos */
+@media (max-width: 360px) {
+  .novidade-card p {
+    font-size: 0.72rem;
+    line-height: 1.35;
+  }
+}
