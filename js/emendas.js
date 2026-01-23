@@ -18,7 +18,7 @@ const EmendasParlamentares = [
   },
   {
     imagem: "https://placehold.co/600x400/ffc107/ffc107",
-    categoria: "Infraestrutura",
+    categoria: "Obras",
     titulo: "Contrução,ampliação e reforma de equipamentos no campo palmeirense",
     descricao:
       "R$ 150.000,00 destinados a contrução, ampliação e revitalização do vestiario do compo palmeirense.",

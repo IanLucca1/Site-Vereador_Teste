@@ -1,6 +1,13 @@
 // Dados de exemplo (organizados e padronizados)
 const Noticias = [
   {
+    data: "Jan 22, 2026",
+    titulo: "Revitalização da Praça Maria Helena da Fonseca, em Belo Horizonte 🏗️🧹",
+    text: "A revitalização da Praça Maria Helena da Fonseca, localizada no bairro São João Batista, em Belo Horizonte, é um projeto que visa transformar esse espaço público em um local mais agradável, seguro e funcional para a comunidade. Com melhorias na infraestrutura, paisagismo e áreas de lazer, a praça se tornará um ponto de encontro para moradores e visitantes, promovendo a convivência social e o bem-estar.",
+    link: "https://www.instagram.com/p/DT01nyUlW74/",
+    linkname: "@insta",
+  },
+  {
     data: "Jan 11, 2026",
     titulo: "Trabalho que não para, nem durante o recesso. 🧹🏙️",
     text: "Mesmo durante o período de férias, seguimos acompanhando de perto as demandas da população. O gabinete parlamentar continua em funcionamento, recebendo pedidos da comunidade e encaminhando à Prefeitura de Belo Horizonte, sempre com o compromisso de trabalhar por uma cidade melhor.",
