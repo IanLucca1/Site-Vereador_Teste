@@ -1,21 +1,46 @@
+/* =========================================================
+   0) BASE / RESET
+   ========================================================= */
+:root {
+  --azul-escuro: #192a56;
+  --azul-seta: #2a4481;
+  --primario: #0d6efd;
+
+  --texto: #444;
+  --texto-claro: #e6eefc;
+  --muted: #888;
+
+  --bg-card: #fff;
+  --shadow-sm: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 10px 20px rgba(0, 0, 0, 0.15);
+
+  --radius-card: 12px;
+  --radius-img: 16px;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
 }
+
+/* (parece teste/dev — mantive) */
 #teste {
   display: flex;
   list-style-type: none;
   gap: 1rem;
 }
 
+/* destaque do primeiro link (logo) */
 #links-principais a:nth-of-type(1) {
-  color: #192a56;
+  color: var(--azul-escuro);
   font-weight: 900;
 }
 
-/* Carrossel - base */
+/* =========================================================
+   1) CARROSSEL (HOME)
+   ========================================================= */
 .carousel {
   position: relative;
   margin: auto;
@@ -25,12 +50,11 @@
   max-width: 100%;
 }
 
-/* slide base */
 .slide {
   display: none;
   height: 100%;
   width: 100%;
-  background-color: #192a56;
+  background-color: var(--azul-escuro);
   position: relative;
 }
 
@@ -38,7 +62,7 @@
   display: block;
 }
 
-/* conteúdo dos slides: variações centered e split */
+/* Conteúdo dos slides */
 .slide-content {
   position: absolute;
   top: 50%;
@@ -52,13 +76,11 @@
   align-items: center;
 }
 
-/* slide 1: centralizado e vertical */
 .slide-content.centered {
   flex-direction: column;
   text-align: center;
 }
 
-/* slide 2: imagem à esquerda, texto à direita */
 .slide-content.split {
   flex-direction: row;
   align-items: center;
@@ -66,18 +88,18 @@
   text-align: left;
 }
 
-/* área da imagem */
+/* área de imagem */
 .slide-image {
-  flex: 0 0 auto; /* tamanho fixo / não encolhe muito */
+  flex: 0 0 auto;
 }
 
-/* imagem: controlada com object-fit para não distorcer */
+/* imagens do carrossel */
 .slide-image img,
 #leis_img {
   display: block;
-  width: 320px; /* ajuste se quiser maior/menor */
+  width: 320px;
   height: 320px;
-  border-radius: 16px;
+  border-radius: var(--radius-img);
   object-fit: cover;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
@@ -86,17 +108,16 @@
   display: block;
   width: 310px;
   height: 185px;
-  border-radius: 16px;
+  border-radius: var(--radius-img);
   object-fit: cover;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
-/* área do texto ao lado da imagem */
 .slide-text {
   flex: 1 1 auto;
 }
 
-/* títulos e parágrafos */
+/* textos */
 .slide-content h2 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
@@ -106,33 +127,35 @@
 
 .slide-content p {
   font-size: 1rem;
-  color: #e6eefc;
+  color: var(--texto-claro);
   line-height: 1.5;
   margin-top: 0.5rem;
 }
 
-/* botão */
+/* botão do carrossel */
 #button-carrosel {
-  background-color: #0d6efd;
+  background-color: var(--primario);
   color: white;
   border: none;
   padding: 10px 18px;
   font-size: 1rem;
   border-radius: 6px;
   cursor: pointer;
-  transition: transform 0.15s ease, background-color 0.2s ease;
+  transition:
+    transform 0.15s ease,
+    background-color 0.2s ease;
 }
+
 #button-carrosel:hover {
   transform: translateY(-2px);
 }
 
-/* Setas do carrossel (mantive as suas posições) */
+/* setas do carrossel simples (← →) */
 #prev,
 #next {
   position: absolute;
   top: 50%;
-  /* transform: translateY(-50%); */
-  background: #2a4481;
+  background: var(--azul-seta);
   border: none;
   color: white;
   font-size: 1.2rem;
@@ -145,70 +168,14 @@
 #prev {
   left: 16px;
 }
+
 #next {
   right: 16px;
 }
 
-/* Posiciona as setas */
-
-.novidades {
-  margin: 40px 0;
-  text-align: center;
-}
-
-/* Contato-Camara-Gabinete*/
-
-.info-cards {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  margin: 40px 0;
-}
-
-.icon {
-  height: 4rem;
-  width: 4rem;
-}
-.card {
-  display: flex;
-  align-items: center;
-  padding: 24px;
-  border-radius: 4px;
-  min-width: 320px;
-  max-width: 400px;
-  color: #fff;
-}
-.card.dark {
-  background: #171738;
-}
-.card.green {
-  background: #00b1a9;
-}
-.card .icon {
-  /* width: 40px;
-  height: 40px; */
-  margin-right: 16px;
-}
-.card strong {
-  font-size: 1.1em;
-}
-
-.card.dark:hover {
-  background: #00b1a9;
-  cursor: pointer;
-  transform: scale(1.05);
-  transition: all 0.9s ease;
-}
-
-.card.green:hover {
-  background: #171738;
-  cursor: pointer;
-  transform: scale(1.05);
-  transition: all 0.9s ease;
-}
-
-/*Novidades*/
-
+/* =========================================================
+   2) SEÇÃO NOVIDADES (TÍTULO + SWIPER)
+   ========================================================= */
 .novidades-section {
   padding: 40px;
   text-align: center;
@@ -220,70 +187,70 @@
   color: #1a2b4c;
 }
 
+/* Você tinha um .novidades-container (grid). Mantive caso use em outra página */
 .novidades-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
 }
 
+/* Card da novidade */
 .novidade-card {
-  background: #fff;
-  border-radius: 12px;
+  background: var(--bg-card);
+  border-radius: var(--radius-card);
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease;
+  box-shadow: var(--shadow-sm);
   text-align: left;
 
-  /* 🔥 ESSENCIAL */
-  height: 320px; /* ajuste se quiser */
+  height: 320px;
   display: flex;
   flex-direction: column;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .novidade-card:hover {
-  transform: translateY(-10px); /* Agora ele tem 20px de "teto" para subir */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-md);
+}
+
+.novidade-card small {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--muted);
 }
 
 .novidade-card h3 {
   font-size: 20px;
   margin-bottom: 10px;
-  color: #0d6efd;
+  color: var(--primario);
 }
 
+/* TEXTO: clamp 4 linhas (sem duplicação) */
 .novidade-card p {
   font-size: 15px;
-  color: #444;
+  color: var(--texto);
   line-height: 1.5;
 
   display: -webkit-box;
-  /* -webkit-line-clamp: 5; */
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.novidade-card small {
-  display: block;
-  margin-bottom: 10px;
-  color: #888;
-}
 
+/* link */
 .links-noticias {
   text-decoration: none;
-  color: #0d6efd;
+  color: var(--primario);
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
-.swiper-slide {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding: 10px 5px;
-}
-
-.swiper-pagination {
-  height: 3.5em;
-}
-
+/* =========================================================
+   3) SWIPER (NOVIDADES)
+   ========================================================= */
 .swiper-novidade {
   overflow: hidden !important;
   padding-top: 20px;
@@ -291,6 +258,91 @@
   margin-top: -20px;
 }
 
+.swiper-slide {
+  padding: 10px 5px;
+}
+
+.swiper-pagination {
+  height: 3.5em;
+}
+
+/* Botões do Swiper (setas do swiper) */
+.swiper-button-prev,
+.swiper-button-next {
+  font-size: 1.5rem;
+  color: var(--primario);
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-family: swiper-icons;
+  font-size: 1.5rem;
+  text-transform: none !important;
+  letter-spacing: 0;
+  font-variant: initial;
+  line-height: 1;
+  padding-right: 26px;
+}
+
+/* =========================================================
+   4) CARDS DE CONTATO / CÂMARA / GABINETE
+   ========================================================= */
+.info-cards {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 40px 0;
+}
+
+.icon {
+  height: 4rem;
+  width: 4rem;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  border-radius: 4px;
+  min-width: 320px;
+  max-width: 400px;
+  color: #fff;
+
+  transition:
+    transform 0.4s ease,
+    background-color 0.4s ease;
+}
+
+.card.dark {
+  background: #171738;
+}
+
+.card.green {
+  background: #00b1a9;
+}
+
+.card .icon {
+  margin-right: 16px;
+}
+
+.card strong {
+  font-size: 1.1em;
+}
+
+/* hover (transition no .card, não aqui) */
+.card.dark:hover {
+  background: #00b1a9;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.card.green:hover {
+  background: #171738;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* links envolvendo cards */
 .card-link {
   display: block;
   text-decoration: none;
@@ -300,26 +352,39 @@
   height: 100%;
 }
 
+/* Se quiser manter um hover extra “forte” no link, deixei,
+   mas ele pode conflitar com o scale(1.05) da .card.
+   Se ficar exagerado, apaga esse bloco abaixo. */
 .card-link .card:hover {
   transform: scale(1.1);
   transition: 1s ease;
   cursor: pointer;
 }
 
-/*Novidades*/
+.links-noticias::before {
+  content: "→ ";
+  font-weight: normal;
+}
 
+/* =========================================================
+   5) RESPONSIVIDADE
+   ========================================================= */
+
+/* <= 1270px */
 @media (max-width: 1270px) {
   .novidade-card {
     min-height: 23rem;
   }
 }
 
+/* <= 1022px */
 @media (max-width: 1022px) {
   .info-cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
   }
+
   .info-cards .card.green {
     grid-column: 1 / -1;
     grid-row: 2;
@@ -331,8 +396,9 @@
   }
 }
 
-/* Para telas menores que 768px (tablets em modo retrato e abaixo) */
+/* <= 768px */
 @media (max-width: 768px) {
+  /* header/footer estão em outros css, mas você tinha aqui — mantive */
   #Header-Principal {
     flex-direction: column;
     gap: 15px;
@@ -349,7 +415,6 @@
     justify-content: center;
   }
 
-  /* Ajusta o carrossel para layout de coluna */
   .slide-content.split {
     flex-direction: column;
     text-align: center;
@@ -360,39 +425,35 @@
     width: 250px;
     height: 250px;
   }
+
   .swiper-button-prev,
   .swiper-button-next {
     display: none;
   }
 }
 
-/* Para telas menores que 480px (celulares) */
+/* <= 680px */
 @media (max-width: 680px) {
   #links-principais a {
     font-size: 0.9rem;
   }
 
   .carousel {
-    height: auto; /* Altura automática para o conteúdo caber */
+    height: auto;
     min-height: 21rem;
   }
 
   .slide-content {
-    position: relative; /* Remove o posicionamento absoluto para evitar cortes */
+    position: relative;
     transform: none;
     top: auto;
     left: auto;
     width: 100%;
     padding: 40px 20px;
-    box-sizing: border-box;
   }
 
   .slide-content h2 {
     font-size: 1.5rem;
-  }
-
-  .slide-content p {
-    /* font-size: 0.9rem; */
   }
 
   .info-cards {
@@ -415,24 +476,6 @@
   #prev,
   #next {
     top: 83%;
-
     padding: 7px;
   }
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-  font-size: 1.5rem;
-  color: #0d6efd;
-}
-
-.swiper-button-next:after,
-.swiper-button-prev:after {
-  font-family: swiper-icons;
-  font-size: 1.5rem;
-  text-transform: none !important;
-  letter-spacing: 0;
-  font-variant: initial;
-  line-height: 1;
-  padding-right: 26px;
 }

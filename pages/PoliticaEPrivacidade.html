@@ -1,18 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
   <head>
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-VVZPVGZQXN"
-    ></script>
+    <!-- Google Analytics + Consent Mode (default denied) -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag("js", new Date());
 
-      gtag("config", "G-VVZPVGZQXN");
+      gtag("consent", "default", {
+        ad_storage: "denied",
+        ad_user_data: "denied",
+        ad_personalization: "denied",
+        analytics_storage: "denied",
+      });
+    </script>
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-VVZPVGZQXN"
+    ></script>
+
+    <script>
+      gtag("js", new Date());
+      gtag("config", "G-VVZPVGZQXN", { anonymize_ip: true });
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -89,8 +100,8 @@
         anônimas de navegação, como o número de visitantes e as páginas mais
         acessadas. Esses dados nos ajudam a melhorar o mandato e a
         transparência. Ao continuar navegando, você concorda com o uso dessas
-        ferramentas.
-        Os dados demográficos fornecidos pelo Google Analytics são estimativas agregadas e não identificam individualmente os usuários.
+        ferramentas. Os dados demográficos fornecidos pelo Google Analytics são
+        estimativas agregadas e não identificam individualmente os usuários.
       </p>
 
       <h2>3. Compartilhamento de Dados</h2>
@@ -105,7 +116,6 @@
         entendendo que talvez não possamos fornecer alguns serviços (como
         responder sua mensagem). Se tiver dúvidas, entre em contato pelo e-mail
         oficial do gabinete.
-        
       </p>
 
       <br />
@@ -113,32 +123,5 @@
         Gabinete Vereador José Ferreira - Câmara Municipal de BH
       </p>
     </div>
-
-    <div id="cookie-banner" class="cookie-banner">
-      <div class="cookie-text">
-        Este site utiliza cookies para garantir que você tenha a melhor
-        experiência e para fins estatísticos (Google Analytics). Ao continuar
-        navegando, você concorda com nossa
-        <a href="pages/PoliticaEPrivacidade.html" target="_blank"
-          >Política de Privacidade</a
-        >.
-      </div>
-      <button id="accept-cookies" class="btn-cookie">Entendi e Aceito</button>
-    </div>
-
-    <script>
-      // Verifica se já aceitou
-      if (!localStorage.getItem("lgpd-aceito")) {
-        document.getElementById("cookie-banner").style.display = "flex";
-      }
-
-      // Função do botão
-      document
-        .getElementById("accept-cookies")
-        .addEventListener("click", function () {
-          localStorage.setItem("lgpd-aceito", "true"); // Salva no navegador
-          document.getElementById("cookie-banner").style.display = "none"; // Some
-        });
-    </script>
   </body>
 </html>
