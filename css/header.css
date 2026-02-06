@@ -45,3 +45,12 @@
     list-style-type: none;
     gap: 1rem;
 }
+
+@media (max-width: 768px) {
+  #Header-Principal {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    height: 7em;
+  }
+}

@@ -399,11 +399,7 @@
 /* <= 768px */
 @media (max-width: 768px) {
   /* header/footer estão em outros css, mas você tinha aqui — mantive */
-  #Header-Principal {
-    flex-direction: column;
-    gap: 15px;
-    padding: 15px;
-  }
+  
 
   #footer {
     flex-direction: column;
@@ -466,7 +462,7 @@
   }
 
   .card {
-    min-width: 90%;
+    /* min-width: 90%; */
   }
 
   .novidades-section {

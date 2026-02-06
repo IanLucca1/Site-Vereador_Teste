@@ -29,7 +29,7 @@ const projetosAndamento = [
     descricao:
       "Dispõe sobre a exclusão de usuário munícipe no cadastro do SISREDE (SUS-BH) na cidade de Belo Horizonte.",
     imagem:
-      "https://placehold.co/400x200/ffc107/000000?text=Legislação+e+Direitos",
+      "https://placehold.co/400x200/ffc107/ffffff?text=Legislação",
     link: "https://www.cmbh.mg.gov.br/atividade-legislativa/pesquisar-proposicoes/projeto-de-lei/326/2025",
   },
   {

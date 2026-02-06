@@ -73,8 +73,8 @@
           <p>
             Aqui você pode enviar suas demandas por e-mail, dúvidas ou sugestões
             pro Gabinete! Se tiver algo mais urgente, clique no ícone do
-            <strong>WhatsApp</strong> acima. Para demandas complexas, use o
-            <strong>Formulário do Google</strong>.
+            <strong><a href="https://wa.me/5531995112535" target="_blank" id="link">WhatsApp</a></strong> acima ou clique no nome. Para demandas complexas, use o
+            <strong><a href="SEU_LINK_DO_GOOGLE_FORMS" id="link" target="_blank">Formulário do Google</a></strong>.
           </p>
         </div>
         <div class="imagem-container">
@@ -98,6 +98,8 @@
           method="POST"
           enctype="multipart/form-data"
         >
+          <input type="text" name="_honey" style="display:none">
+
           <input type="hidden" name="_subject" value="Novo Contato via Site" />
           <input type="hidden" name="_captcha" value="false" />
 
@@ -130,6 +132,7 @@
             name="attachment"
             id="anexo"
             accept="image/png, image/jpeg, application/pdf"
+            max="5242880"
           />
 
           <button type="submit" class="btn-enviar">Enviar Mensagem</button>

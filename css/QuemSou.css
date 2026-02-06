@@ -122,7 +122,7 @@
 
 @media (max-width: 768px) {
   #Email_link {
-    display: none;
+
   }
   /* --- Ajustes no Header Superior --- */
   #Header-Principal {
@@ -137,11 +137,13 @@
     height: 25rem; /* Diminui a altura do banner */
     text-align: center; /* Centraliza o texto */
     margin-bottom: 0;
+    
   }
 
   .banner-quem-sou h1 {
     font-size: 2rem; /* Diminui a fonte do título */
     padding-right: 0; /* REMOVE o padding que quebrava o layout */
+
   }
 
   /* --- Ajustes no Layout de Duas Colunas --- */
