@@ -71,7 +71,7 @@
   max-width: 1100px;
   width: calc(100% - 80px);
   display: flex;
-  gap: 2.5rem;
+  gap: 1.5rem;
   font-size: 18px;
   align-items: center;
 }
@@ -155,23 +155,25 @@
 #next {
   position: absolute;
   top: 50%;
+  transform: translateY(-50%);
   background: var(--azul-seta);
   border: none;
   color: white;
-  font-size: 1.2rem;
   cursor: pointer;
-  padding: 10px;
-  border-radius: 50%;
-  z-index: 10;
+  z-index: 50;
+
+  /* tamanho responsivo e clicável */
+  width: clamp(36px, 6vw, 46px);
+  height: clamp(36px, 6vw, 46px);
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  font-size: clamp(16px, 2.4vw, 22px);
+  line-height: 1;
 }
 
-#prev {
-  left: 16px;
-}
-
-#next {
-  right: 16px;
-}
+#prev { left: 16px; }
+#next { right: 16px; }
 
 /* =========================================================
    2) SEÇÃO NOVIDADES (TÍTULO + SWIPER)
@@ -235,7 +237,8 @@
   line-height: 1.5;
 
   display: -webkit-box;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 7;
+  line-clamp: 7;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -434,10 +437,6 @@
     font-size: 0.9rem;
   }
 
-  .carousel {
-    height: auto;
-    min-height: 21rem;
-  }
 
   .slide-content {
     position: relative;
@@ -461,17 +460,28 @@
     grid-row: auto;
   }
 
-  .card {
-    /* min-width: 90%; */
-  }
-
   .novidades-section {
     padding: 20px;
   }
 
-  #prev,
-  #next {
-    top: 83%;
-    padding: 7px;
+.carousel {
+    height: auto;
+    min-height: 0;                 /* <-- remove o buraco branco */
+    background: var(--azul-escuro); /* <-- garante fundo azul mesmo se variar */
+    padding-bottom: 60px;          /* <-- espaço pras setas ficarem dentro */
   }
+
+  .slide {
+    height: auto;                  /* <-- para de depender de 100% */
+    min-height: 0;
+    background-color: transparent; /* fundo agora é da .carousel */
+  }
+
+   #prev, #next {
+    top: 75%; /* ou 55% */
+    transform: translateY(-50%);
+  }
+
+  #prev { left: 12px; }
+  #next { right: 12px; }
 }

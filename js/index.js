@@ -3,7 +3,7 @@ const Noticias = [
 {
   data: "Fev 07, 2026",
   titulo: "Obras do Novo Centro de Saúde 🏥🚧",
-  text: "Uma conquista que começa a sair do papel e vira cuidado de verdade. O novo Centro de Saúde está ganhando uma estrutura mais moderna e avançada, garantindo mais conforto, comodidade e dignidade para a população e colaboradores, além de mais qualidade no atendimento para quem mais precisa. O trabalho reforça o compromisso com uma saúde pública mais humana, eficiente e acessível para todos.",
+  text: "Uma conquista que começa a sair do papel e vira cuidado de verdade. O novo Centro de Saúde está ganhando uma estrutura mais moderna e avançada, garantindo mais conforto, comodidade e dignidade para a população e colaboradores, além de mais qualidade no atendimento para quem mais precisa.",
   link: "https://www.instagram.com/p/DUbjCywguVW/",
   linkname: "@Instagram",
 },
