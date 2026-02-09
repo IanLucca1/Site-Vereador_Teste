@@ -1,15 +1,3 @@
-//    document.addEventListener("DOMContentLoaded", function () {
-//         const heroText = document.querySelector(".hero-text");
-//         const heroImage = document.querySelector(".hero-image");
-
-//         // Adiciona a classe 'is-visible' para ativar a animação do CSS
-//         // O setTimeout garante que a animação comece após a renderização inicial
-//         setTimeout(() => {
-//           heroText.classList.add("is-visible");
-//           heroImage.classList.add("is-visible");
-//         }, 100); // 100ms de delay
-//       });
-
 // --- BANCO DE DADOS DAS EMENDAS ---
 const todasAsEmendas = [
   // Emendas de 2025
@@ -372,8 +360,6 @@ function popularTabela(ano, dados) {
 
   tbody.innerHTML = linhasHTML;
 }
-
-// --- LÓGICA PRINCIPAL ---
 
 // 1. Filtra as emendas por ano
 

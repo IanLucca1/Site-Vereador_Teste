@@ -164,6 +164,14 @@ body {
   color: #555;
 }
 
+.emenda-card p{
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* número de linhas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
 /* Ajuste opcional para a cor dos botões de navegação do Swiper */
 .swiper-button-next,
 .swiper-button-prev {

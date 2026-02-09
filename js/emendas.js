@@ -27,7 +27,7 @@ const EmendasParlamentares = [
   {
     imagem: "https://placehold.co/600x400/007bff/007bff",
     categoria: "Saúde",
-    titulo: "Destinado para reformas e compra de equipamentos para o posto de saude C.S Pindorama",
+    titulo: "Reformas e compra de equipamentos para o posto de saude C.S Pindorama",
     descricao:
       "R$ 400.000,00 para a reforma completa da quadra poliesportiva, incluindo nova pintura, alambrados e iluminação de LED para uso noturno.",
     data: "",
