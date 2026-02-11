@@ -1,12 +1,19 @@
 // Dados de exemplo (textos resumidos: 3–4 linhas)
 const Noticias = [
-{
-  data: "Fev 07, 2026",
-  titulo: "Obras do Novo Centro de Saúde 🏥🚧",
-  text: "Uma conquista que começa a sair do papel e vira cuidado de verdade. O novo Centro de Saúde está ganhando uma estrutura mais moderna e avançada, garantindo mais conforto, comodidade e dignidade para a população e colaboradores, além de mais qualidade no atendimento para quem mais precisa.",
-  link: "https://www.instagram.com/p/DUbjCywguVW/",
-  linkname: "@Instagram",
-},
+  {
+    data: "Fev 06, 2026",
+    titulo: "Cuidar da saúde é cuidar de pessoas 🏥💙",
+    text: "Investir em saúde pública é cuidar de pessoas, fortalecer comunidades e garantir dignidade para todos. Seguimos trabalhando por mais acesso, mais estrutura e mais cuidado com quem mais precisa.",
+    link: "https://www.instagram.com/p/DUI7HzYCR6y/",
+    linkname: "@Instagram",
+  },
+  {
+    data: "Fev 07, 2026",
+    titulo: "Obras do Novo Centro de Saúde 🏥🚧",
+    text: "Uma conquista que começa a sair do papel e vira cuidado de verdade. O novo Centro de Saúde está ganhando uma estrutura mais moderna e avançada, garantindo mais conforto, comodidade e dignidade para a população e colaboradores, além de mais qualidade no atendimento para quem mais precisa.",
+    link: "https://www.instagram.com/p/DUbjCywguVW/",
+    linkname: "@Instagram",
+  },
   {
     data: "Fev 05, 2026",
     titulo: "Entrevista no Café com Política ☕🎙️",
