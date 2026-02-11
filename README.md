@@ -24,7 +24,6 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 * **Página Inicial (Home):** Com carrossel de destaques e feed de notícias.
 * **Página "Quem Sou":** Biografia e trajetória do vereador.
 * **Página de Emendas:** Tabela dinâmica, rolável e ordenável com as emendas parlamentares por ano.
-* **Páginas de Projetos:** Card com varios projetos do vereador em andamento ou concluidos.
 * **Design Responsivo:** O site se adapta a diferentes tamanhos de tela, como celulares e tablets.
 
 ---
