@@ -4,7 +4,7 @@ const Noticias = [
     data: "Fev 06, 2026",
     titulo: "Cuidar da saúde é cuidar de pessoas 🏥💙",
     text: "Investir em saúde pública é cuidar de pessoas, fortalecer comunidades e garantir dignidade para todos. Seguimos trabalhando por mais acesso, mais estrutura e mais cuidado com quem mais precisa.",
-    link: "https://www.instagram.com/p/DUI7HzYCR6y/",
+    link: "https://www.instagram.com/p/DUl7HzYCR6y/",
     linkname: "@Instagram",
   },
   {
@@ -72,41 +72,6 @@ const Noticias = [
     link: "https://www.instagram.com/p/DRNm1nvgUJq/",
     linkname: "@insta",
   },
-  // {
-  //   data: "Ago 25, 2025",
-  //   titulo: "Visita Técnica no bairro Santo Antônio 📍🏥",
-  //   text: "Atendendo moradores, realizamos uma visita técnica na Rua Deputado Álvaro Sales para ouvir demandas e buscar soluções. O diálogo aberto com a população é essencial para construir uma cidade mais justa, eficiente e com mais qualidade de vida.",
-  //   link: "https://www.instagram.com/p/DNytTDMQt8A/",
-  //   linkname: "@insta",
-  // },
-  // {
-  //   data: "Jul 20, 2025",
-  //   titulo: "Visita técnica onde o povo precisa! 💙🏥",
-  //   text: "Passei pelos Centros de Saúde dos bairros Vale do Jatobá, Petrópolis e Independência, acompanhando de perto a realidade de cada unidade. Ouvir a população e fiscalizar o atendimento é dever do mandato: presença, escuta e ação.",
-  //   link: "https://www.instagram.com/p/DL3OAfax_Qt/",
-  //   linkname: "@insta",
-  // },
-  // {
-  //   data: "Jul 11, 2025",
-  //   titulo: "Revitalização da Rua Rio Petrópolis em andamento! 🏗️🚧",
-  //   text: "Estamos trabalhando para melhorar mobilidade, segurança e qualidade de vida na comunidade. Acompanhe o progresso, compartilhe essa conquista e siga participando para construirmos uma cidade melhor para todos.",
-  //   link: "https://www.instagram.com/p/DL-1fPIxpzT/",
-  //   linkname: "@insta",
-  // },
-  // {
-  //   data: "Jul 08, 2025",
-  //   titulo: "Encerramos mais uma etapa importante! 🏥✅",
-  //   text: "Finalizamos as visitas técnicas aos centros de saúde com responsabilidade e compromisso. Seguimos atentos a cada detalhe para garantir atendimento de qualidade para a população. Missão cumprida — e o trabalho continua.",
-  //   link: "https://www.instagram.com/p/DL3OAfax_Qt/",
-  //   linkname: "@insta",
-  // },
-  // {
-  //   data: "Jun 06, 2025",
-  //   titulo: "Visita Técnica da Saúde nos bairros Cinquentenário e Betânia 🩵🏥",
-  //   text: "Realizei visitas técnicas na área da saúde nos bairros Cinquentenário, Betânia e Conjunto Betânia. Acompanhamos as condições das unidades para cobrar melhorias e garantir uma saúde pública mais digna e eficiente para a população.",
-  //   link: "https://www.instagram.com/p/DKkts7JxF3U/",
-  //   linkname: "@insta",
-  // },
 ];
 
 // Função para popular o carrossel com os dados
