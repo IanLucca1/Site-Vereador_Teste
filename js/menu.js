@@ -1,4 +1,4 @@
-      // ...existing code...
+
 document.addEventListener('DOMContentLoaded', function() {
   const toggle = document.getElementById('menu-toggle');
   const nav = document.getElementById('menu-nav');

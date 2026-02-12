@@ -24,9 +24,6 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 * **Página Inicial (Home):** Com carrossel de destaques e feed de notícias.
 * **Página "Quem Sou":** Biografia e trajetória do vereador.
 * **Página de Emendas:** Tabela dinâmica, rolável e ordenável com as emendas parlamentares por ano.
-* **Página de Projetos:** Página com Projetos aprovados e projetos em andamento do Vereador.
-* **Página de Fale Conosco:** Página com sistema de envio de e-mails ou contato direto por WhatSapp ou Google Formulario.
-* **Página de Câmera de BH:** Página com informações atualizadas da Câmara Municipal sobre noticias do Vereador.
 * **Design Responsivo:** O site se adapta a diferentes tamanhos de tela, como celulares e tablets.
 
 ---

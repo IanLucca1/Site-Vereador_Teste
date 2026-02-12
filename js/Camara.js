@@ -1,5 +1,12 @@
 const NoticiasCamera = [
   {
+  data: "Fev 11, 2026",
+  titulo: "José Ferreira defende previsibilidade nos repasses à saúde 🏥💰",
+  text: "Durante audiência da Comissão de Saúde, José Ferreira destacou o envio de R$ 72 milhões da Câmara para regularizar dívidas com hospitais 100% SUS e reforçou a necessidade de garantir previsibilidade e sustentabilidade nos repasses.",
+  link: "https://www.cmbh.mg.gov.br/",
+  linkname: "Leia a matéria completa",
+},
+  {
     data: "Fev 04, 2026",
     titulo: "Comissão de Saúde avança em exames oftalmológicos nas escolas 👁️📚",
     text: "Parecer favorável ao programa Oftalmologia nas Escolas, com exames preventivos gratuitos. José Ferreira também cobrou explicações sobre atrasos nos repasses a hospitais filantrópicos do SUS-BH.",
