@@ -4,7 +4,7 @@ const Noticias = [
     data: "Fev 12, 2026",
     titulo: "Entrevista no Jornal O Tempo – Segunda Parte 🎙️📰",
     text: "Segue a segunda parte da entrevista ao Jornal O Tempo. Um momento importante para apresentar nosso posicionamento e reforçar o compromisso com a população. Acompanhe.",
-    link: "https://www.instagram.com/p/DURbL8SDQfe/",
+    link: "https://www.instagram.com/p/DUrBL8SDQfe/",
     linkname: "@Instagram",
   },
   {
@@ -18,7 +18,7 @@ const Noticias = [
     data: "Fev 07, 2026",
     titulo: "Obras do Novo Centro de Saúde 🏥🚧",
     text: "Uma conquista que começa a sair do papel e vira cuidado de verdade. O novo Centro de Saúde está ganhando uma estrutura mais moderna e avançada, garantindo mais conforto, comodidade e dignidade para a população e colaboradores, além de mais qualidade no atendimento para quem mais precisa.",
-    link: "https://www.instagram.com/p/DUbjCywguVW/",
+    link: "https://www.instagram.com/p/DUbjCYwguVW/",
     linkname: "@Instagram",
   },
   {
@@ -220,3 +220,4 @@ document.addEventListener("keydown", (e) => {
 // inicializa
 showSlide(currentIndex);
 startAutoPlay();
+
