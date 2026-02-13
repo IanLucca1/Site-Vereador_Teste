@@ -1,6 +1,13 @@
 // Dados de exemplo (textos resumidos: 3–4 linhas)
 const Noticias = [
   {
+    data: "Fev 12, 2026",
+    titulo: "Entrevista no Jornal O Tempo – Segunda Parte 🎙️📰",
+    text: "Segue a segunda parte da entrevista ao Jornal O Tempo. Um momento importante para apresentar nosso posicionamento e reforçar o compromisso com a população. Acompanhe.",
+    link: "https://www.instagram.com/p/DURbL8SDQfe/",
+    linkname: "@Instagram",
+  },
+  {
     data: "Fev 06, 2026",
     titulo: "Cuidar da saúde é cuidar de pessoas 🏥💙",
     text: "Investir em saúde pública é cuidar de pessoas, fortalecer comunidades e garantir dignidade para todos. Seguimos trabalhando por mais acesso, mais estrutura e mais cuidado com quem mais precisa.",
@@ -57,21 +64,7 @@ const Noticias = [
     link: "https://www.instagram.com/p/DSEGwswEeRu/",
     linkname: "@insta",
   },
-  {
-    data: "Nov 20, 2025",
-    titulo:
-      "Sancionada a Carteira de Identificação da Pessoa Acometida pela Fibromialgia. 💙",
-    text: "Foi publicada no Diário Oficial do Município a Lei 11.924, de 18 de novembro de 2025. Resultado do nosso PL nº 422/2025, a lei institui a Carteira de Identificação da Pessoa Acometida pela Fibromialgia em BH.",
-    link: "https://www.instagram.com/p/DRR5hNvjTFy/",
-    linkname: "@insta",
-  },
-  {
-    data: "Nov 18, 2025",
-    titulo: "Visitas aos Centros de Saúde da Pampulha. 🏥💙",
-    text: "Visitei centros de saúde da Região Pampulha, conversando com profissionais e usuários e observando a rotina das equipes. Identificamos necessidades de manutenção e modernização, guiando novos encaminhamentos e ações para fortalecer o SUS.",
-    link: "https://www.instagram.com/p/DRNm1nvgUJq/",
-    linkname: "@insta",
-  },
+
 ];
 
 // Função para popular o carrossel com os dados
