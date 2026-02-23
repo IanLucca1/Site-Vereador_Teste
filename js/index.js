@@ -1,24 +1,39 @@
 // Dados de exemplo (textos resumidos: 3–4 linhas)
 const Noticias = [
   {
-    data: "Fev 12, 2026",
-    titulo: "Entrevista no Jornal O Tempo – Segunda Parte 🎙️📰",
-    text: "Segue a segunda parte da entrevista ao Jornal O Tempo. Um momento importante para apresentar nosso posicionamento e reforçar o compromisso com a população. Acompanhe.",
-    link: "https://www.instagram.com/p/DUrBL8SDQfe/",
+    data: "Fev 21, 2026",
+    titulo: "Novo Redutor de veloidade na Rua Mafra🚦",
+    text: "A instalação de um novo redutor de velocidade na Rua Mafra, é uma medida importante para aumentar a segurança viária. Essa iniciativa visa proteger pedestres e motoristas, promovendo um trânsito mais seguro e consciente.",
+    link: "https://www.instagram.com/p/DU_ng4BCUK-/",
     linkname: "@Instagram",
   },
   {
-    data: "Fev 06, 2026",
+    data: "Fev 20, 2026",
+    titulo: "Hospital da Baleia, apoio e homenagem 🏥💙 ",
+    text: "Recebi com alegria a homenagem do Hospital da Baleia, um reconhecimento que reforça nosso compromisso com a saúde pública. Como vereador de Belo Horizonte e presidente da Comissão de Saúde, seguimos trabalhando para garantir mais recursos.",
+    link: "https://www.instagram.com/p/DU9Cf12AWmA/",
+    linkname: "@Instagram",
+  },
+  {
+    data: "Fev 12, 2026",
     titulo: "Cuidar da saúde é cuidar de pessoas 🏥💙",
     text: "Investir em saúde pública é cuidar de pessoas, fortalecer comunidades e garantir dignidade para todos. Seguimos trabalhando por mais acesso, mais estrutura e mais cuidado com quem mais precisa.",
     link: "https://www.instagram.com/p/DUl7HzYCR6y/",
     linkname: "@Instagram",
   },
   {
+    data: "Fev 06, 2026",
+    titulo: "Entrevista no Jornal O Tempo – Segunda Parte 🎙️📰",
+    text: "Segue a segunda parte da entrevista ao Jornal O Tempo. Um momento importante para apresentar nosso posicionamento e reforçar o compromisso com a população. Acompanhe.",
+    link: "https://www.instagram.com/p/DURbL8SDQfe/",
+    linkname: "@Instagram",
+  },
+
+  {
     data: "Fev 07, 2026",
     titulo: "Obras do Novo Centro de Saúde 🏥🚧",
     text: "Uma conquista que começa a sair do papel e vira cuidado de verdade. O novo Centro de Saúde está ganhando uma estrutura mais moderna e avançada, garantindo mais conforto, comodidade e dignidade para a população e colaboradores, além de mais qualidade no atendimento para quem mais precisa.",
-    link: "https://www.instagram.com/p/DUbjCYwguVW/",
+    link: "https://www.instagram.com/p/DUbjCywguVW/",
     linkname: "@Instagram",
   },
   {
@@ -64,7 +79,6 @@ const Noticias = [
     link: "https://www.instagram.com/p/DSEGwswEeRu/",
     linkname: "@insta",
   },
-
 ];
 
 // Função para popular o carrossel com os dados
@@ -220,4 +234,3 @@ document.addEventListener("keydown", (e) => {
 // inicializa
 showSlide(currentIndex);
 startAutoPlay();
-

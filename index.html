@@ -1,14 +1,13 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
-    <!-- Google Analytics + Consent Mode (default denied) -->
+    <!-- Google Analytics --->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
       }
 
-      // Consent Mode: tudo NEGADO por padrão
       gtag("consent", "default", {
         ad_storage: "denied",
         ad_user_data: "denied",
@@ -263,8 +262,11 @@
               >Principais Projetos</a
             >
           </li>
+           <li>
+            <a href="../pages/EmendasParlamentares.html" class="Links">Emendas Parlamentares</a>
+          </li>
           <li>
-            <a href="pages/FaleConosco.html">Fale Conosco</a>
+            <a href="../pages/FaleConosco.html" class="Links">Fale Conosco</a>
           </li>
         </ul>
       </div>
@@ -294,13 +296,13 @@
           >Política de Privacidade</a
         >.
       </div>
-      <button id="accept-cookies" class="btn-cookie">Entendi e Aceito</button>
+      <button id="accept-cookies" class="btn-cookie">Entendo e Aceito</button>
     </div>
 
     <script>
       const consent = localStorage.getItem("lgpd-aceito");
 
-      // Se já aceitou antes, libera analytics automaticamente
+      // libera analytics automaticamente
       if (consent === "true") {
         gtag("consent", "update", {
           ad_storage: "denied",
