@@ -220,7 +220,7 @@ td:nth-child(4) {
 
 @media (max-width: 500px) {
   tbody {
-    font-size: 10px;
+    font-size: 13px;
   }
   .tabela-wrapper th {
     font-size: 12px;
