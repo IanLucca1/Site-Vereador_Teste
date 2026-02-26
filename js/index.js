@@ -1,6 +1,13 @@
 // Dados de exemplo (textos resumidos: 3–4 linhas)
 const Noticias = [
   {
+    data: "Fev 26, 2025",
+    titulo: "Vazamento de esgoto na Rua Ingá 🚧",
+    text: "O vazamento de esgoto na Rua Ingá, é um problema que afeta a qualidade de vida dos moradores. A situação exige uma resposta rápida, cobranças já estão sendo feitas, os pedidos foram protocolados e agora vamos acompanhar de perto para que tudo seja resolvido.",
+    link: "https://www.instagram.com/p/DVOdyNoDUWq/",
+    linkname: "@Instagram",
+  },
+  {
     data: "Fev 21, 2026",
     titulo: "Novo Redutor de veloidade na Rua Mafra🚦",
     text: "A instalação de um novo redutor de velocidade na Rua Mafra, é uma medida importante para aumentar a segurança viária. Essa iniciativa visa proteger pedestres e motoristas, promovendo um trânsito mais seguro e consciente.",

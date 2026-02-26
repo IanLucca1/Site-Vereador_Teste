@@ -1,4 +1,11 @@
 const NoticiasCamera = [
+{
+  data: "Fev 25, 2026",
+  titulo: "José Ferreira propõe controle de acesso em novo Centro de Saúde 🏥🔒",
+  text: "Na audiência sobre o novo Centro de Saúde da Serra, José Ferreira questionou a implementação de controle de acesso na unidade. A medida visa reforçar a segurança e proteger os profissionais de saúde.",
+  link: "https://www.cmbh.mg.gov.br/comunica%C3%A7%C3%A3o/not%C3%ADcias/2026/02/projeto-de-novo-centro-de-sa%C3%BAde-no-bairro-serra-%C3%A9-apresentado-pelo-executivo",
+  linkname: "Leia a matéria completa",
+},
   {
   data: "Fev 11, 2026",
   titulo: "José Ferreira defende previsibilidade nos repasses à saúde 🏥💰",
