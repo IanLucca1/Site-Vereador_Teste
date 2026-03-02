@@ -75,6 +75,22 @@ const projetosAprovados = [
     imagem: "https://placehold.co/400x200/6c757d/FFFFFF?text=Urbanismo",
     link: "https://www.cmbh.mg.gov.br/atividade-legislativa/pesquisar-proposicoes/projeto-de-lei/755/2023",
   },
+{
+  data: "15/12/2023",
+  titulo: "👩 Lei 11633/2023 - Selo BH Emprega + Mulher",
+  descricao:
+    "Institui o Selo BH Emprega + Mulher para certificar empresas que contratarem mulheres em situação de vulnerabilidade social, múltiplos Vereadore autores da lei.",
+  imagem: "https://placehold.co/400x200/e83e8c/FFFFFF?text=Inclus%C3%A3o+Social",
+  link: "https://www.cmbh.mg.gov.br/atividade-legislativa/pesquisar-legislacao/lei/11633/2023",
+},
+{
+  data: "28/04/2023",
+  titulo: "🏛️ Lei 11489/2023 - Normas de Governança Pública e Gestão de Riscos",
+  descricao: "Estabelece normas de governança pública e gestão de riscos para a gestão fiscal. Autoria de múltiplos vereadores. ",
+  imagem: "https://placehold.co/400x200/007bff/FFFFFF?text=Gest%C3%A3o+Fiscal+e+Riscos",
+  link: "https://www.cmbh.mg.gov.br/atividade-legislativa/pesquisar-legislacao/lei/11489/2023"
+}
+
 ];
 
 function popularCarrossel(seletorSwiper, dados) {
