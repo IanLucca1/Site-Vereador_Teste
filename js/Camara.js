@@ -1,4 +1,11 @@
 const NoticiasCamera = [
+  {
+  data: "Mar 03, 2026",
+  titulo: "José Ferreira convoca prestação de contas do SUS-BH 🏥📊",
+  text: "Como presidente da Comissão de Saúde, José Ferreira solicitou audiência para prestação de contas do SUS-BH referente ao último quadrimestre de 2025. A reunião irá detalhar investimentos, serviços prestados e indicadores da saúde pública.",
+  link: "https://www.cmbh.mg.gov.br/comunica%C3%A7%C3%A3o/not%C3%ADcias/2026/03/presta%C3%A7%C3%A3o-de-contas-do-sus-bh-ser%C3%A1-realizada-nesta-quarta-feira-4",
+  linkname: "Leia a matéria completa",
+},
 {
   data: "Fev 25, 2026",
   titulo: "José Ferreira propõe controle de acesso em novo Centro de Saúde 🏥🔒",
