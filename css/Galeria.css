@@ -9,6 +9,12 @@
   --shadow-md: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
 
+
+#links-principais a:nth-of-type(5) {
+    color: #192a56;
+    font-weight: 900;
+}
+
 /* Fundo suave */
 .galeria-section {
   background: linear-gradient(180deg, #f4f6fb 0%, #ffffff 100%);
@@ -45,8 +51,8 @@
 /* Grid */
 .galeria-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 /* Card */
@@ -109,5 +115,27 @@
 @media (max-width: 768px) {
   .galeria-card img {
     height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .galeria-card img {
+    height: 180px;
+  }
+
+
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .galeria-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Celular */
+@media (max-width: 600px) {
+  .galeria-grid {
+    grid-template-columns: 1fr;
   }
 }
