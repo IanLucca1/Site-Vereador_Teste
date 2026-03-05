@@ -1,10 +1,10 @@
 const fotos = [
-  { titulo: "Visita ao Hospital", imagem: "../img/img_Jose.jpg" },
-  { titulo: "Evento Público", imagem: "../img/img_Jose.jpg" },
-  { titulo: "Reunião com Comunidade", imagem: "../img/img_Jose.jpg" },
-  { titulo: "Inauguração de Projeto", imagem: "../img/img_Jose.jpg" },
-  { titulo: "Ação Social", imagem: "../img/img_Jose.jpg" },
-  { titulo: "Entrega de Benefícios", imagem: "../img/img_Jose.jpg" }
+  { titulo: "Visita ao CS Bom Jesus ", imagem: "../img/CS_BomJesus/teste1.jpg" },
+  { titulo: "Visita ao CS California", imagem: "../img/CS_California/teste2.jpg" },
+  { titulo: "Comissão Especial", imagem: "../img/ComissaoEspecial/teste3.jpg" },
+  { titulo: "Visita ao CS Dom Cabral", imagem: "../img/CS_DomCabral/teste5.jpg" },
+  { titulo: "Visita ao CS Ermelinda", imagem: "../img/CS_Ermelinda/teste4.jpg" },
+  { titulo: "Visita ao CS Dom Cabral", imagem: "../img/CS_DomCabral/teste6.jpg" }
 ];
 
 function renderGaleria() {
