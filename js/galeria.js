@@ -4,7 +4,8 @@ const fotos = [
   { titulo: "Comissão Especial", imagem: "../img/ComissaoEspecial/teste3.jpg" },
   { titulo: "Visita ao CS Dom Cabral", imagem: "../img/CS_DomCabral/teste5.jpg" },
   { titulo: "Visita ao CS Ermelinda", imagem: "../img/CS_Ermelinda/teste4.jpg" },
-  { titulo: "Visita ao CS Dom Cabral", imagem: "../img/CS_DomCabral/teste6.jpg" }
+  { titulo: "Visita ao CS Dom Cabral", imagem: "../img/CS_DomCabral/teste6.jpg" },
+  { titulo: "Visita ao CS Ermelinda", imagem: "../img/CS_Ermelinda/Ermelinda1.jpg" },
 ];
 
 function renderGaleria() {

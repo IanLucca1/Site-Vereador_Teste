@@ -1,5 +1,19 @@
 const NoticiasCamera = [
   {
+  data: "Mar 05, 2026",
+  titulo: "José Ferreira apoia programa de telessaúde no SUS-BH 💻🏥",
+  text: "José Ferreira é um dos autores da lei que cria o Programa Municipal de Incentivo à Telessaúde. A medida amplia o acesso a consultas médicas remotas e ajuda a reduzir a sobrecarga nas unidades de saúde.",
+  link: "https://www.cmbh.mg.gov.br/comunica%C3%A7%C3%A3o/not%C3%ADcias/2026/03/programa-de-incentivo-%C3%A0-telessa%C3%BAde-no-sus-bh-%C3%A9-sancionado",
+  linkname: "Leia a matéria completa",
+},
+  {
+  data: "Mar 04, 2026",
+  titulo: "José Ferreira cobra atenção para falta de insumos na saúde 🏥⚠️",
+  text: "Durante audiência de prestação de contas do SUS-BH, José Ferreira reforçou a necessidade de atenção à falta de insumos nas unidades básicas. O vereador destacou que identificou o problema durante visitas a centros de saúde.",
+  link: "https://www.cmbh.mg.gov.br/comunica%C3%A7%C3%A3o/not%C3%ADcias/2026/03/secretaria-confirma-dificuldades-mas-destaca-avan%C3%A7os-conquistados-em",
+  linkname: "Leia a matéria completa",
+},
+  {
   data: "Mar 03, 2026",
   titulo: "José Ferreira convoca prestação de contas do SUS-BH 🏥📊",
   text: "Como presidente da Comissão de Saúde, José Ferreira solicitou audiência para prestação de contas do SUS-BH referente ao último quadrimestre de 2025. A reunião irá detalhar investimentos, serviços prestados e indicadores da saúde pública.",
@@ -10,7 +24,7 @@ const NoticiasCamera = [
   data: "Fev 25, 2026",
   titulo: "José Ferreira propõe controle de acesso em novo Centro de Saúde 🏥🔒",
   text: "Na audiência sobre o novo Centro de Saúde da Serra, José Ferreira questionou a implementação de controle de acesso na unidade. A medida visa reforçar a segurança e proteger os profissionais de saúde.",
-  link: "https://www.cmbh.mg.gov.br/comunica%C3%A7%C3%A3o/not%C3%ADcias/2026/02/projeto-de-novo-centro-de-sa%C3%BAde-no-bairro-serra-%C3%A9-apresentado-pelo-executivo",
+  link: "https://www.cmbh.mg.gov.br/comunica%C3%A7%C3%A3o/not%C3%ADcias/2026/02/projeto-de-novo-centro-de-sa%C3%BAde-no-bairro-serra-%C3%A9-apresentado-pelo",
   linkname: "Leia a matéria completa",
 },
   {

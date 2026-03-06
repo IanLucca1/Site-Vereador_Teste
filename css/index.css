@@ -1,6 +1,4 @@
-/* =========================================================
-   0) BASE / RESET
-   ========================================================= */
+
 :root {
   --azul-escuro: #192a56;
   --azul-seta: #2a4481;
@@ -25,7 +23,6 @@
   font-family: "Open Sans", sans-serif;
 }
 
-/* (parece teste/dev — mantive) */
 #teste {
   display: flex;
   list-style-type: none;
@@ -154,7 +151,7 @@
 #prev,
 #next {
   position: absolute;
-  top: 50%;
+  top: 59%;
   transform: translateY(-50%);
   background: var(--azul-seta);
   border: none;
