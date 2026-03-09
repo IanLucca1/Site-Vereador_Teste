@@ -1,6 +1,13 @@
 // Dados de exemplo (textos resumidos: 3–4 linhas)
 const Noticias = [
   {
+    data: "Mar 08, 2026",
+    titulo: "Dia Internacional da Mulher – Homenagem e Compromisso 💜",
+    text: "No Dia Internacional da Mulher, homenageamos a força, a coragem e a determinação de todas as mulheres. Seguimos firmes no compromisso de lutar por igualdade, respeito e oportunidades para todas, construindo uma sociedade mais justa e inclusiva.",
+    link: "https://www.instagram.com/p/DVmaJnRAs6r/",
+    linkname: "@Instagram",
+  },
+  {
     data: "Fev 27, 2026",
     titulo: "Avanços na Analise para implantar um complexo educacional no bairro.🏫",
     text: "Estamos avançando na análise para implantar um complexo educacional no bairro, um projeto que visa oferecer mais oportunidades de aprendizado e desenvolvimento para a comunidade.",
@@ -77,13 +84,6 @@ const Noticias = [
     titulo: "Trabalho que não para, nem durante o recesso. 🧹🏙️",
     text: "Mesmo durante o recesso, seguimos acompanhando as demandas da população. O gabinete continua em funcionamento, recebendo pedidos e encaminhando à Prefeitura de Belo Horizonte, com o compromisso de trabalhar por uma cidade melhor.",
     link: "https://www.instagram.com/joseferreira.projetoajudai/reel/DTWDoPYgrBY/",
-    linkname: "@insta",
-  },
-  {
-    data: "Dez 22, 2025",
-    titulo: "Parque aterro pra um parque de lazer. 🌳",
-    text: "Onde antes não havia nada, agora nasce um novo espaço para a cidade. Um projeto que transforma uma área degradada em oportunidade, sustentabilidade e mais qualidade de vida para Belo Horizonte.",
-    link: "https://www.instagram.com/p/DSlH5SQDhMF/",
     linkname: "@insta",
   },
 ];
