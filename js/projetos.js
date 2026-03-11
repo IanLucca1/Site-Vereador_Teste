@@ -1,5 +1,26 @@
 const projetosAndamento = [
   {
+    data: "06/03/2026",
+    titulo: "🎭 PL 707/2026 - Proibição da comercialização de mascaras Realistas.",
+    descricao: "Proíbe a comercialização de máscaras realistas que simulem feições humanas no município de Belo Horizonte e dá outras providências.",
+    imagem: "https://placehold.co/400x200/6c757d/FFFFFF?text=Seguran%C3%A7a+P%C3%BAblica",
+    link: "https://www.cmbh.mg.gov.br/atividade-legislativa/pesquisar-proposicoes/projeto-de-lei/707/2026",
+  },
+  {
+    data: "26/02/2026",
+    titulo: "🪧 PL 687/2026 - Placas de Informações de funcionamento da rede SUS-BH",
+    descricao: "Dispõe sobre a istalação de placas informativas sobre o funcionamento da rede SUS-BH.",
+    imagem: "https://placehold.co/400x200/007bff/FFFFFF?text=Sa%C3%BAde+P%C3%BAblica",
+    link: "https://www.cmbh.mg.gov.br/atividade-legislativa/pesquisar-proposicoes/projeto-de-lei/687/2026",
+  },
+  {
+    data: "14/11/2025",
+    titulo: "📅 PL 585/2025 - Data Comemorativa",
+    descricao: "Institui o dia 8 de Outubro como Semana da Doação Células-Tronco, do Cordão Umbilical, e do Placentário no município de Belo Horizonte.",
+    imagem: "https://placehold.co/400x200/28a745/FFFFFF?text=Sa%C3%BAde+P%C3%BAblica",
+    link: "https://www.cmbh.mg.gov.br/atividade-legislativa/pesquisar-proposicoes/projeto-de-lei/585/2025",
+  },
+  {
     data: "14/11/2025",
     titulo: "🏥 PL 586/2025 - Selo Municipal SCUP",
     descricao:
@@ -44,6 +65,13 @@ const projetosAndamento = [
 
 const projetosAprovados = [
   {
+    data: "04/03/2026",
+    titulo: "🩺 Lei 11968/2026 - Programa Municipal de Incentivo à Telessaúde",
+    descricao: "Institui o Programa Municipal de Incentivo à Telessaúde, visando ampliar o acesso a serviços de saúde por meio de tecnologias digitais. Autoria de múltiplos vereadores.",
+    imagem: "https://placehold.co/400x200/007bff/FFFFFF?text=Sa%C3%BAde+P%C3%BAblica",
+    link: "https://www.cmbh.mg.gov.br/atividade-legislativa/pesquisar-legislacao/lei/11968/2026",
+  },
+  {
     data: "13/08/2025",
     titulo: "🛹 Lei da Corrida de Rolimã (PL 76/2025)",
     descricao:
@@ -59,6 +87,13 @@ const projetosAprovados = [
     imagem: "https://placehold.co/400x200/007bff/FFFFFF?text=Saúde+e+Inclusão",
     link: "https://www.cmbh.mg.gov.br/atividade-legislativa/pesquisar-proposicoes/projeto-de-lei/422/2025",
   },
+  {
+  data: "03/04/2023",
+  titulo: "🪧 PL 537/2023 - Protocolo Mulheres Seguras",
+  descricao: "Cria conjunto de ações para que espaços públicos e privados de lazer saibam como agir para detectar situações de agressão - Autoria de múltiplos vereadores.",
+  imagem: "https://placehold.co/400x200/d63384/FFFFFF?text=Prote%C3%A7%C3%A3o+%C3%A0+Mulher",
+  link: "https://www.cmbh.mg.gov.br/atividade-legislativa/pesquisar-proposicoes/projeto-de-lei/537/2023",
+},
   {
     data: "18/01/2025",
     titulo: "💄 Lei do Dia dos Profissionais da Beleza (PL 1008/2024)",

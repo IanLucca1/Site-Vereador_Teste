@@ -331,6 +331,10 @@
   .novidade-card p {
     font-size: 0.85rem;
   }
+    .acessoRapido{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /* celulares pequenos */
