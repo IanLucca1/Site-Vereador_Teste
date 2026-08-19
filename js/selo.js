@@ -10,9 +10,7 @@ const foto = new Image();
 let fotoCarregada = false;
 let seloCarregado = false;
 
-// ==========================
 // CONFIGURAÇÕES
-// ==========================
 
 const TAMANHO_CANVAS = 1080;
 
@@ -29,25 +27,19 @@ let arrastando = false;
 let ultimoX = 0;
 let ultimoY = 0;
 
-// ==========================
 // TOUCH / POINTER
-// ==========================
 
 const ponteiros = new Map();
 
 let distanciaInicial = null;
 let escalaInicial = 1;
 
-// ==========================
 // CANVAS
-// ==========================
 
 canvas.width = TAMANHO_CANVAS;
 canvas.height = TAMANHO_CANVAS;
 
-// ==========================
 // CARREGAMENTO DO SELO
-// ==========================
 
 selo.onload = function () {
   seloCarregado = true;
@@ -55,9 +47,7 @@ selo.onload = function () {
   desenhar();
 };
 
-// ==========================
 // ESCOLHER FOTO
-// ==========================
 
 fotoInput.addEventListener("change", function () {
   const arquivo = fotoInput.files[0];
@@ -84,9 +74,7 @@ fotoInput.addEventListener("change", function () {
   foto.src = url;
 });
 
-// ==========================
 // CALCULAR ESCALA INICIAL
-// ==========================
 
 function calcularEscalaInicial() {
   const escalaX = TAMANHO_CANVAS / foto.width;
@@ -97,9 +85,7 @@ function calcularEscalaInicial() {
   escala = Math.max(escalaX, escalaY);
 }
 
-// ==========================
 // CENTRALIZAR FOTO
-// ==========================
 
 function centralizarFoto() {
   const largura = foto.width * escala;
@@ -109,9 +95,7 @@ function centralizarFoto() {
   posY = (TAMANHO_CANVAS - altura) / 2;
 }
 
-// ==========================
 // DESENHAR
-// ==========================
 
 function desenhar() {
   if (!fotoCarregada || !seloCarregado) {
@@ -120,25 +104,19 @@ function desenhar() {
 
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-  // --------------------------
   // FOTO
-  // --------------------------
 
   const largura = foto.width * escala;
   const altura = foto.height * escala;
 
   ctx.drawImage(foto, posX, posY, largura, altura);
 
-  // --------------------------
   // SELO
-  // --------------------------
 
   ctx.drawImage(selo, 0, 0, TAMANHO_CANVAS, TAMANHO_CANVAS);
 }
 
-// ==========================
 // LIMITAR POSIÇÃO DA FOTO
-// ==========================
 
 function limitarPosicao() {
   const largura = foto.width * escala;
@@ -181,9 +159,7 @@ function limitarPosicao() {
   }
 }
 
-// ==========================
 // MOUSE / TOUCH
-// ==========================
 
 canvas.addEventListener("pointerdown", function (evento) {
   ponteiros.set(evento.pointerId, evento);
@@ -208,9 +184,7 @@ canvas.addEventListener("pointerdown", function (evento) {
   }
 });
 
-// ==========================
 // MOVIMENTO
-// ==========================
 
 canvas.addEventListener("pointermove", function (evento) {
   if (!ponteiros.has(evento.pointerId)) {
@@ -219,9 +193,7 @@ canvas.addEventListener("pointermove", function (evento) {
 
   ponteiros.set(evento.pointerId, evento);
 
-  // ----------------------
   // DOIS DEDOS = ZOOM
-  // ----------------------
 
   if (ponteiros.size === 2) {
     const pontos = Array.from(ponteiros.values());
@@ -243,9 +215,7 @@ canvas.addEventListener("pointermove", function (evento) {
     return;
   }
 
-  // ----------------------
   // UM DEDO / MOUSE
-  // ----------------------
 
   if (ponteiros.size === 1 && arrastando) {
     const deltaX = evento.clientX - ultimoX;
@@ -270,9 +240,7 @@ canvas.addEventListener("pointermove", function (evento) {
   }
 });
 
-// ==========================
 // SOLTAR POINTER
-// ==========================
 
 canvas.addEventListener("pointerup", finalizarPointer);
 
@@ -297,9 +265,7 @@ function finalizarPointer(evento) {
   }
 }
 
-// ==========================
 // CALCULAR DISTÂNCIA
-// ==========================
 
 function calcularDistancia(ponto1, ponto2) {
   const x = ponto2.clientX - ponto1.clientX;
@@ -309,9 +275,7 @@ function calcularDistancia(ponto1, ponto2) {
   return Math.sqrt(x * x + y * y);
 }
 
-// ==========================
 // LIMITAR ZOOM
-// ==========================
 
 function limitarEscala() {
   if (escala < ESCALA_MINIMA) {
@@ -323,9 +287,7 @@ function limitarEscala() {
   }
 }
 
-// ==========================
 // RODINHA DO MOUSE
-// ==========================
 
 canvas.addEventListener(
   "wheel",

@@ -12,3 +12,4 @@ baixarBtn.addEventListener("click", function () {
     URL.revokeObjectURL(link.href);
   }, "image/png");
 });
+ 
