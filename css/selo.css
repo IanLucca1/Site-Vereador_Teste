@@ -86,10 +86,10 @@
   background-color: #555;
 }
 
-#main-selo > div,
+/* #main-selo > div,
 #links-principais {
   width: 100%;
-}
+} */
 
 @media (max-width: 600px) {
   #main-selo {
